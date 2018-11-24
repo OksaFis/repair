@@ -424,6 +424,13 @@ template {
   outline: none;
 }
 
+.input {
+  font-size: 15px;
+  padding: 26px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+}
+
 .main {
   background-color: #f5f5f5;
   padding: 60px 0;
@@ -501,6 +508,105 @@ template {
 
 .main-advantages__img-3 {
   background-image: url("../img/main/paint-board-and-brush.png");
+}
+
+.feedback {
+  padding: 94px 0;
+  background: url("../img/feedback/feedback-bg.png") no-repeat center right -50%;
+}
+
+.form {
+  max-width: 575px;
+}
+
+.form__title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  line-height: 35px;
+  margin-bottom: 45px;
+}
+
+.form__subtitle {
+  margin-bottom: 50px;
+  display: block;
+}
+
+.form__input {
+  width: 270px;
+  margin-bottom: 25px;
+}
+
+.form__input:first-child {
+  margin-right: 30px;
+}
+
+.form__button {
+  padding: 28px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+}
+
+.form__output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 31px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__output-item {
+  font-size: 15px;
+  display: block;
+  width: 226px;
+  height: 39px;
+  margin-right: 78px;
+}
+
+.form__output-item-sign {
+  width: 270px;
+  font-size: 15px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 18px;
+}
+
+.form__output-img {
+  width: 15px;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 22px;
+  border-radius: 50%;
+  border: 2px solid #cccccc;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__output-img-sign {
+  background-image: url("../img/feedback/phone.png");
+}
+
+.form__output-phone {
+  padding-top: 10px;
+  display: block;
+  color: #333;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 15px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
