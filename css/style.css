@@ -512,7 +512,20 @@ template {
 
 .feedback {
   padding: 94px 0;
-  background: url("../img/feedback/feedback-bg.png") no-repeat center right -50%;
+  background: url("../img/feedback/feedback-bg.png") no-repeat center left 750px;
+  background-size: contain;
+  z-index: 1;
+}
+
+.feedback:before {
+  content: '';
+  left: 0;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: -1;
 }
 
 .form {
@@ -621,5 +634,128 @@ body {
 
 img {
   max-width: 100%;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 767px;
+  }
+  .main-text__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .feedback {
+    background: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  .hidden-xs {
+    display: none;
+  }
+  .container {
+    width: 95%;
+  }
+  .main-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-text {
+    max-width: 400px;
+    margin: auto;
+  }
+  .main-text__title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-wrap {
+    display: block;
+    text-align: center;
+  }
+  .header-text {
+    display: block;
+    text-align: center;
+  }
+  .header-text_contacts {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+  .main {
+    padding: 0;
+  }
+  .container {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container-text {
+    margin: auto;
+  }
+  .container-text__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .feedback {
+    padding: 5px;
+  }
+  .form__title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .form__subtitle {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .form__input {
+    width: 235px;
+  }
+  .form__button {
+    width: 235px;
+    height: 67px;
+    font-size: 16px;
+    padding: 0;
+  }
+  .form__output {
+    display: inline-block;
+    width: 235px;
+    height: 150px;
+    text-align: center;
+  }
+  .form__output-item {
+    font-size: 15px;
+    padding-bottom: 15px;
+    height: 50px;
+  }
+  .form__output-item-sign {
+    display: block;
+    font-size: 15px;
+    height: 50px;
+  }
+  .form__output-img-sign {
+    margin: auto;
+  }
+  .form__output-phone {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
