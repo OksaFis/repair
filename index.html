@@ -25,7 +25,7 @@
                 </div>
                 <!--header-text_contacts-->
                 <div class="header-text_button">
-                    <button class="button">Перезвоните <span class="hidden-xs">мне</span></button>
+                    <button class="button" id="button-callback">Перезвоните <span class="hidden-xs">мне</span></button>
                 </div>
             </div>
             <!--header-text-->
@@ -118,6 +118,79 @@
         </div>
     </section>
     
+    <div class="modal" id="modal-callback">
+        <div class="modal__dialog">
+            <div class="modal__close">&#10006</div>
+            
+            <div class="modal__dialog-advantages">
+
+                <div class="modal__dialog-advantages__item">
+                    <div class="modal__dialog-advantages__img modal__dialog-advantages__img-1"> </div>
+                        <div class="modal__dialog-advantages__text">Ванная комната<br><hr align="right" width="30" size="2" color=" #FFD002"><br>
+                            <span class="hidden-xs">135*150 - <strong>31 000 руб.</strong><br>
+                            170*170 - <strong>43 000 руб.</strong></span>
+
+                       </div>
+                </div>  <!--modal__dialog-advantages__item-->  
+                    
+
+                <div class="modal__dialog-advantages__item">
+                    <div class="modal__dialog-advantages__img modal__dialog-advantages__img-2"> </div>
+                        <div class="modal__dialog-advantages__text">Туалет<br><hr align="right" width="30" size="2" color=" #FFD002"><br><span class="hidden-xs">135*70 - <strong>14 000 руб.</strong></span>
+
+                        </div>
+                </div>     <!--dialog-advantages__item-->
+                   
+
+                <div class="modal__dialog-advantages__item">
+                    <div class="modal__dialog-advantages__img modal__dialog-advantages__img-3"> </div>
+                        <div class="modal__dialog-advantages__text">Совмещенный санузел<br><hr align="right" width="30" size="2" color=" #FFD002"><br><span class="hidden-xs">170*210 - <strong>54 000 руб.</strong></span>
+                            </div>
+                </div>     <!--modal__dialog-advantages__item--> 
+                   
+
+                <span class="hidden-xs"><div class="descr"><strong>В стоимость работ входит:</strong>
+                                <ul><li> Демонтаж старого покрытия стен и пола</li>
+                                <li>Выравнивание стен гипсовыми составами</li>
+                                <li>Грунтовка стен и пола антисептиком, бетоноконтактом</li>
+                                <li>Монтаж кафельной плитки на полу и стенах</li>
+                                <li>Установка реечного или натяжного потолка, светильников</li>
+                                <li>Монтаж двери с коробкой</li></ul>
+                                
+                        </div></span>
+            </div><!--modal__dialog-advantages-->
+                                
+                                
+            <div class="modal__dialog-manager">
+               <div class="container">
+                    <h2 class="modal__dialog-manager__title">Узнайте точную стоимость<br> ремонта по телефону! </h2>
+                    <div class="modal__dialog-manager__subtitle">Заполните поля ниже - мы свяжемся с вами
+                    </div>
+                    <form class="modal__dialog-form">
+                        <input type="text" class="modal__dialog-input modal__dialog-input-name modal__dialog-form__input" placeholder="Ваше имя">
+                        <input type="tel" class="modal__dialog-input modal__dialog-input-tel modal__dialog-form__input" placeholder="Ваш телефон">
+                        <button type="submit" class="modal__dialog-button modal__dialog-form__button">Узнать стоимость
+                        </button>
+                    </form>
+                        <div class="modal__dialog-form__text">Или вы можете перезвонить нам сами<br> по телефону:</div>
+                        <div class="modal__dialog-form__tel">+7(8182) 42-51-31</div>
+
+                   </div> <!--container-->
+                </div><!--modal__dialog-manager-->
+             </div> <!--modal__dialog-->            
+        </div> <!--modal-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#button-callback').on('click', function() {
+                $('#modal-callback').toggleClass('modal_visible');
+            });
+            $('.modal__close').on('click', function() {
+                $('#modal-callback').toggleClass('modal_visible');    
+            });
+        });
+    </script>    
 
 </body>
 </html>  

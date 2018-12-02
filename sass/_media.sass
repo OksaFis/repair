@@ -1,6 +1,9 @@
 @media (max-width: 1199px)
     .container
         width: 970px
+    .modal__dialog
+        width: 970px
+       
 @media (max-width: 992px)
     .container
         width: 767px 
@@ -11,6 +14,12 @@
                 line-height: 36px
     .feedback
         background: #fff
+    .modal__dialog
+        width: 760px
+        &-form__input
+            width: 270px
+        &-form__button
+            width: 270px    
 @media (max-width: 768px)
     .hidden-xs 
         display: none
@@ -24,7 +33,46 @@
             margin: auto
             &__title
                 text-align: center
-@media (max-width: 480px)
+    .modal__dialog
+        width: 570px
+        margin: auto
+        &-advantages
+            background-color: #fff
+            padding-top: 15px
+            &__item
+                display: inline-block
+            &__img
+                margin-right: auto
+            .descr
+                font-size: 10px
+                line-height: 10px
+                padding: 0
+                margin: 0
+        &-manager__title
+            font-size: 20px
+            line-height: 18px
+            margin: auto
+            padding-top: 10px
+            padding-bottom: 15px
+            &__subtitle
+                margin-bottom: 5px
+        &-form
+            display: block
+            &-form__input
+                width: 150px
+            &-form__button
+                width: 150px  
+            &__input
+                width: 250px
+                height: 30px
+            &__button
+                margin-bottom: 8px
+                width: 250px
+                height: 30px
+                font-size: 15px
+            &__tel
+                font-size: 18px
+@media (max-width: 576px)
     .header
         &-wrap
             display: block
@@ -86,6 +134,43 @@
                 font-size: 15px
                 line-height: 20px
                 margin-bottom: 50px
+    .modal__dialog
+        display: flex
+        width: 320px
+        background-color: #fff
+        justify-content: center
+        &-advantages
+            padding: auto
+            background-color: #fff
+
+            &__item
+                display: block
+                margin-bottom: 10px
+            &__text
+                font-size: 12px
+                      
+        &-manager__title
+            font-size: 15px
+            line-height: 15px
+            margin: auto
+            padding-top: 50px
+        &__subtitle
+            margin-bottom: 7px
+        &-form
+            display: block
+            &__input
+                width: 120px
+                height: 20px
+                font-size: 7px
+            &__button
+                margin-bottom: 8px
+                width: 120px
+                height: 20px
+                font-size: 10px
+            &__tel
+                font-size: 15px
+                
+                  
 
     
 

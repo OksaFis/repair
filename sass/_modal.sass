@@ -1,0 +1,100 @@
+.modal
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,0.52)
+    left: 0
+    top: 0
+    z-index: 99%
+    display: flex
+    &_visible
+        display: none
+    &__close
+        position: absolute
+        top: 15px
+        right: 15px
+        &:hover
+          cursor: pointer
+    &__dialog
+        width: 1170px
+        background-color: #fff
+        position: relative
+        margin: auto
+        display: flex
+        justify-content: center
+        align-items: center
+        &-advantages
+            display: flex
+            flex-direction: column
+            background-color: #f7f7f7
+            width: 51%
+            height: 92%
+            padding-left: 60px
+            padding-top: 60px
+            padding-bottom: 40px
+            &__item
+                display: flex
+                margin-bottom: 15px
+            &__img
+                width: 120px
+                height: 85px
+                margin-right: 20px
+                &-1
+                    background-image: url('../img/window/1.png')
+                &-2
+                    background-image: url('../img/window/2.png')
+                &-3
+                    background-image: url('../img/window/3.png')
+            &__text
+                display: block
+                font-size: 15px
+                hr
+                    float: left
+        .descr
+            font-size: 12px
+            line-height: 20px
+            li
+                list-style-type: none /* Скрываем маркеры, отображаемые по умолчанию */
+            li:before
+                color: $primary-color /* Цвет маркера */
+                +bold
+                content: "•" /* Маркер */
+                padding-right: 7px /* Отступ от маркера до текста */
+        &-manager
+            display: flex
+            width: 49%
+            height: 92%
+            background-color: #fff
+            text-align: center
+            justify-content: center
+            &__title
+                font-size: 20px
+                +bold
+                line-height: 30px
+            &__subtitle
+                margin-bottom: 40px
+
+        &-form
+            display: block
+            &__input
+                width: 350px
+                height: 60px
+                margin-bottom: 25px
+                border: 2px solid #cccccc
+                border-radius: 10px 
+                padding-left: 15px
+            &__button
+                background-color: $primary-color
+                justify-content: center
+                margin-bottom: 20px
+                width: 350px
+                height: 60px
+                font-size: 15px
+                +bold
+                border-radius: 10px
+            &__text
+                margin-bottom: 10px
+            &__tel
+                font-size: 20px
+                +bold
+                margin-bottom: 60px        
