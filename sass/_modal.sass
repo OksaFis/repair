@@ -6,9 +6,9 @@
     left: 0
     top: 0
     z-index: 99%
-    display: flex
+    display: none
     &_visible
-        display: none
+        display: flex
     &__close
         position: absolute
         top: 15px
@@ -29,16 +29,16 @@
             background-color: #f7f7f7
             width: 51%
             height: 92%
-            padding-left: 60px
-            padding-top: 60px
-            padding-bottom: 40px
+            padding-left: 79px
+            padding-top: 80px
+            
             &__item
                 display: flex
                 margin-bottom: 15px
             &__img
                 width: 120px
                 height: 85px
-                margin-right: 20px
+                margin-right: 29px
                 &-1
                     background-image: url('../img/window/1.png')
                 &-2
@@ -46,20 +46,31 @@
                 &-3
                     background-image: url('../img/window/3.png')
             &__text
-                display: block
-                font-size: 15px
+                display: inline-block
+                font-size: 16px
+                line-height: 22px
+
+                                            
                 hr
                     float: left
+                    margin-top: 9px
+                    margin-bottom: 9px
         .descr
-            font-size: 12px
-            line-height: 20px
+            font-size: 14px
+            line-height: 25px
+            padding-top: 53px   
+            padding-bottom: 75px 
+            ul
+                padding-top: 28px
+                padding-left: 0
+                margin: 0        
             li
                 list-style-type: none /* Скрываем маркеры, отображаемые по умолчанию */
             li:before
                 color: $primary-color /* Цвет маркера */
                 +bold
                 content: "•" /* Маркер */
-                padding-right: 7px /* Отступ от маркера до текста */
+                padding-right: 14px /* Отступ от маркера до текста */
         &-manager
             display: flex
             width: 49%
@@ -68,33 +79,51 @@
             text-align: center
             justify-content: center
             &__title
-                font-size: 20px
+                font-size: 22px
                 +bold
-                line-height: 30px
+                line-height: 33px
+                margin-top: 80px
+                margin-left: 143px
+                margin-right: 136px
+                margin-bottom: 52px
+                text-align: center
+                width: 291px
+                height: 54px
+                font-weight: 400
             &__subtitle
-                margin-bottom: 40px
-
+                margin-bottom: 53px
+                font-size: 16px
         &-form
             display: block
             &__input
-                width: 350px
-                height: 60px
-                margin-bottom: 25px
-                border: 2px solid #cccccc
+                width: 370px
+                height: 65px
+                margin-bottom: 15px
+                border: 1px solid #dddddd
                 border-radius: 10px 
                 padding-left: 15px
+
             &__button
                 background-color: $primary-color
                 justify-content: center
-                margin-bottom: 20px
-                width: 350px
-                height: 60px
-                font-size: 15px
+                margin-bottom: 33px
+                width: 368px
+                height: 70px
+                font-size: 16px
                 +bold
                 border-radius: 10px
             &__text
-                margin-bottom: 10px
+                margin-bottom: 13px
+                font-size: 15px
+                width: 271px
+                height: 35px
+                font-weight: 400
+                line-height: 20px
+                margin-left: 148px
+                margin-right: 151px
+
             &__tel
-                font-size: 20px
+                font-size: 24px
                 +bold
-                margin-bottom: 60px        
+                margin-bottom: 76px
+                line-height: 24px        

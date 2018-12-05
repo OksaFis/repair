@@ -1,6 +1,10 @@
 @media (max-width: 1199px)
     .container
         width: 970px
+    .slider
+        &__item
+            img
+                max-width: 95%
     .modal__dialog
         width: 970px
        
@@ -14,12 +18,44 @@
                 line-height: 36px
     .feedback
         background: #fff
+    .portfolio
+        padding: 30px
     .modal__dialog
         width: 760px
-        &-form__input
-            width: 270px
-        &-form__button
-            width: 270px    
+        &-advantages
+            background-color: #fff
+            padding-top: 20px
+            &__text
+                font-size: 12px
+                line-height: 22px
+            .descr
+                font-size: 10px
+                line-height: 20px
+                padding: 0
+                padding-bottom: 20px
+                ul 
+                   padding-top: 10px 
+        &-manager__title
+            font-size: 18px
+            line-height: 18px
+            margin: auto
+            padding-top: 10px
+            padding-bottom: 25px
+            
+            &__subtitle
+                margin-bottom: 5px
+        &-form
+            display: block
+            &__input
+                width: 300px
+                height: 30px
+            &__button
+                margin-bottom: 8px
+                width: 300px
+                height: 30px
+                font-size: 15px
+            &__tel
+                font-size: 18px
 @media (max-width: 768px)
     .hidden-xs 
         display: none
@@ -33,6 +69,11 @@
             margin: auto
             &__title
                 text-align: center
+    .portfolio
+        padding: 30px
+        .section-title
+            font-size: 15px
+            line-height: 35px
     .modal__dialog
         width: 570px
         margin: auto
@@ -48,14 +89,18 @@
                 line-height: 10px
                 padding: 0
                 margin: 0
-        &-manager__title
-            font-size: 20px
-            line-height: 18px
-            margin: auto
-            padding-top: 10px
-            padding-bottom: 15px
-            &__subtitle
-                margin-bottom: 5px
+            &-manager__title
+                font-size: 20px
+                width: none
+                height: none
+                margin-left: none
+                margin-right: none
+                text-align: center
+                padding-top: 10px
+                padding-bottom: 15px
+                &__subtitle
+                    margin-bottom: 5px
+                    
         &-form
             display: block
             &-form__input
@@ -70,6 +115,13 @@
                 width: 250px
                 height: 30px
                 font-size: 15px
+            &__text
+                width: 250px
+                height: 35px
+                font-weight: 400
+                line-height: 20px
+                margin-left: 10px
+                margin-right: 10px
             &__tel
                 font-size: 18px
 @media (max-width: 576px)
@@ -134,41 +186,73 @@
                 font-size: 15px
                 line-height: 20px
                 margin-bottom: 50px
+    .portfolio
+        padding: 20px
+        .section-title
+            font-size: 15px
+            line-height: 20px
+        img
+            max-width: 75%
+        
     .modal__dialog
-        display: flex
+        display: block
         width: 320px
         background-color: #fff
         justify-content: center
         &-advantages
             padding: auto
             background-color: #fff
-
             &__item
                 display: block
-                margin-bottom: 10px
+                margin-bottom: 5px
             &__text
+                display: inline-flex
                 font-size: 12px
-                      
+                line-height: 10px
+                margin-bottom: 10px
+                text-align: center
+                hr
+                    display: none
+        &-manager
+            padding: 0 auto   
+            margin: 0 auto           
         &-manager__title
-            font-size: 15px
-            line-height: 15px
-            margin: auto
-            padding-top: 50px
+           
+            margin-left: auto
+            margin-right: auto
+            width: 180px
+            height: 100px
+            justify-content: center
+            
         &__subtitle
-            margin-bottom: 7px
+            
+            display: inline-flex
+            font-size: 11px
+            height: none
+            font-weight: none
+            line-height: 1px
+            margin-left: auto
+            margin-right: auto
         &-form
-            display: block
+            display: flexbox
             &__input
-                width: 120px
-                height: 20px
-                font-size: 7px
+                width: 200px
+                height: 30px
+                font-size: 11px
             &__button
-                margin-bottom: 8px
-                width: 120px
-                height: 20px
-                font-size: 10px
+                width: 200px
+                height: 30px
+                font-size: 12px
+            &__text
+                width: none
+                height: none
+                margin-left: auto
+                margin-right: auto
+                margin-bottom: 20px
             &__tel
                 font-size: 15px
+                margin-bottom: 20px
+                
                 
                   
 

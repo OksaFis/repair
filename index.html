@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
     <title>Ремонт квартир</title>
 </head>
 
@@ -117,80 +118,161 @@
             </div>
         </div>
     </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <h2 class="section-title section-title_center">Работая с 2007 года,<br>
+                мы сделали более 500 ремонтов в квартирах и домах
+            </h2>
+            <div class="slider">
+                <div class="slider__item">
+                    <img src="img/portfolio/1.png" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/portfolio/2.png" alt="">
+                </div>
+                <div class="slider__item">
+                    <img src="img/portfolio/3.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        $('.slider').slick({
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToShow: 1,
+            variableWidth: true,
+            autoplay: false,
+            arrows: true,
+            nextArrow: '<div class="arrow arrow_right"></div>',
+            prevArrow: '<div class="arrow arrow_left"></div>',
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+
+        });
+    </script>
     
     <div class="modal" id="modal-callback">
         <div class="modal__dialog">
             <div class="modal__close">&#10006</div>
-            
+
             <div class="modal__dialog-advantages">
 
                 <div class="modal__dialog-advantages__item">
                     <div class="modal__dialog-advantages__img modal__dialog-advantages__img-1"> </div>
-                        <div class="modal__dialog-advantages__text">Ванная комната<br><hr align="right" width="30" size="2" color=" #FFD002"><br>
-                            <span class="hidden-xs">135*150 - <strong>31 000 руб.</strong><br>
+                    <div class="modal__dialog-advantages__text">Ванная комната<br>
+                        <hr align="right" width="42" size="2" color="#FFD002"><br>
+                        <span class="hidden-xs">135*150 - <strong>31 000 руб.</strong><br>
                             170*170 - <strong>43 000 руб.</strong></span>
 
-                       </div>
-                </div>  <!--modal__dialog-advantages__item-->  
-                    
+                    </div>
+                </div>
+                <!--modal__dialog-advantages__item-->
+
 
                 <div class="modal__dialog-advantages__item">
                     <div class="modal__dialog-advantages__img modal__dialog-advantages__img-2"> </div>
-                        <div class="modal__dialog-advantages__text">Туалет<br><hr align="right" width="30" size="2" color=" #FFD002"><br><span class="hidden-xs">135*70 - <strong>14 000 руб.</strong></span>
+                    <div class="modal__dialog-advantages__text">Туалет<br>
+                        <hr align="right" width="42" size="2" color="#FFD002"><br><span class="hidden-xs">135*70 -
+                            <strong>14 000 руб.</strong></span>
 
-                        </div>
-                </div>     <!--dialog-advantages__item-->
-                   
+                    </div>
+                </div>
+                <!--dialog-advantages__item-->
+
 
                 <div class="modal__dialog-advantages__item">
                     <div class="modal__dialog-advantages__img modal__dialog-advantages__img-3"> </div>
-                        <div class="modal__dialog-advantages__text">Совмещенный санузел<br><hr align="right" width="30" size="2" color=" #FFD002"><br><span class="hidden-xs">170*210 - <strong>54 000 руб.</strong></span>
-                            </div>
-                </div>     <!--modal__dialog-advantages__item--> 
-                   
+                    <div class="modal__dialog-advantages__text">Совмещенный санузел<br>
+                        <hr align="right" width="42" size="2" color="#FFD002"><br><span class="hidden-xs">170*210 -
+                            <strong>54 000 руб.</strong></span>
+                    </div>
+                </div>
+                <!--modal__dialog-advantages__item-->
 
-                <span class="hidden-xs"><div class="descr"><strong>В стоимость работ входит:</strong>
-                                <ul><li> Демонтаж старого покрытия стен и пола</li>
-                                <li>Выравнивание стен гипсовыми составами</li>
-                                <li>Грунтовка стен и пола антисептиком, бетоноконтактом</li>
-                                <li>Монтаж кафельной плитки на полу и стенах</li>
-                                <li>Установка реечного или натяжного потолка, светильников</li>
-                                <li>Монтаж двери с коробкой</li></ul>
-                                
-                        </div></span>
-            </div><!--modal__dialog-advantages-->
-                                
-                                
+
+                <span class="hidden-xs">
+                    <div class="descr"><strong>В стоимость работ входит:</strong>
+                        <ul>
+                            <li> Демонтаж старого покрытия стен и пола</li>
+                            <li>Выравнивание стен гипсовыми составами</li>
+                            <li>Грунтовка стен и пола антисептиком, бетоноконтактом</li>
+                            <li>Монтаж кафельной плитки на полу и стенах</li>
+                            <li>Установка реечного или натяжного потолка, светильников</li>
+                            <li>Монтаж двери с коробкой</li>
+                        </ul>
+
+                    </div>
+                </span>
+            </div>
+            <!--modal__dialog-advantages-->
+
+
             <div class="modal__dialog-manager">
-               <div class="container">
-                    <h2 class="modal__dialog-manager__title">Узнайте точную стоимость<br> ремонта по телефону! </h2>
+                <div class="container">
+                    <h2 class="modal__dialog-manager__title">Узнайте точную стоимость ремонта по телефону! </h2>
                     <div class="modal__dialog-manager__subtitle">Заполните поля ниже - мы свяжемся с вами
                     </div>
                     <form class="modal__dialog-form">
-                        <input type="text" class="modal__dialog-input modal__dialog-input-name modal__dialog-form__input" placeholder="Ваше имя">
-                        <input type="tel" class="modal__dialog-input modal__dialog-input-tel modal__dialog-form__input" placeholder="Ваш телефон">
+                        <input type="text" class="modal__dialog-input modal__dialog-input-name modal__dialog-form__input"
+                            placeholder="Ваше имя">
+                        <input type="tel" class="modal__dialog-input modal__dialog-input-tel modal__dialog-form__input"
+                            placeholder="Ваш телефон">
                         <button type="submit" class="modal__dialog-button modal__dialog-form__button">Узнать стоимость
                         </button>
                     </form>
-                        <div class="modal__dialog-form__text">Или вы можете перезвонить нам сами<br> по телефону:</div>
-                        <div class="modal__dialog-form__tel">+7(8182) 42-51-31</div>
+                    <div class="modal__dialog-form__text">Или вы можете перезвонить нам сами по телефону:</div>
+                    <div class="modal__dialog-form__tel">+7(8182) 42-51-31</div>
 
-                   </div> <!--container-->
-                </div><!--modal__dialog-manager-->
-             </div> <!--modal__dialog-->            
-        </div> <!--modal-->
+                </div>
+                <!--container-->
+            </div>
+            <!--modal__dialog-manager-->
+        </div>
+        <!--modal__dialog-->
+    </div>
+    <!--modal-->
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
     <script>
-        $(document).ready(function() {
-            $('#button-callback').on('click', function() {
+        $(document).ready(function () {
+            $('#button-callback').on('click', function () {
                 $('#modal-callback').toggleClass('modal_visible');
             });
-            $('.modal__close').on('click', function() {
-                $('#modal-callback').toggleClass('modal_visible');    
+            $('.modal__close').on('click', function () {
+                $('#modal-callback').toggleClass('modal_visible');
             });
         });
-    </script>    
+    </script>
 
 </body>
-</html>  
+
+</html>

@@ -618,6 +618,48 @@ template {
   line-height: 24px;
 }
 
+.portfolio {
+  padding: 100px 0;
+  background: url("../img/portfolio/bg-slider.png") repeat;
+}
+
+.slider__item {
+  text-align: center;
+}
+
+.slider__item img {
+  margin: auto;
+  padding: 0 10px;
+}
+
+.arrow {
+  width: 45px;
+  height: 19px;
+  background-color: #000;
+  position: absolute;
+  bottom: -68px;
+}
+
+.arrow a:hover {
+  cursor: pointer;
+}
+
+.arrow_right {
+  left: 50%;
+  background: url("../img/arrow-right.png") no-repeat center;
+  background-size: 100%;
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
+}
+
+.arrow_left {
+  left: 50%;
+  background: url("../img/arrow-left.png") no-repeat center;
+  -webkit-transform: translateX(-45px);
+          transform: translateX(-45px);
+  margin-left: -15px;
+}
+
 .modal {
   position: fixed;
   width: 100%;
@@ -626,13 +668,13 @@ template {
   left: 0;
   top: 0;
   z-index: 99%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
 .modal_visible {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .modal__close {
@@ -672,9 +714,8 @@ template {
   background-color: #f7f7f7;
   width: 51%;
   height: 92%;
-  padding-left: 60px;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  padding-left: 79px;
+  padding-top: 80px;
 }
 
 .modal__dialog-advantages__item {
@@ -687,7 +728,7 @@ template {
 .modal__dialog-advantages__img {
   width: 120px;
   height: 85px;
-  margin-right: 20px;
+  margin-right: 29px;
 }
 
 .modal__dialog-advantages__img-1 {
@@ -703,17 +744,28 @@ template {
 }
 
 .modal__dialog-advantages__text {
-  display: block;
-  font-size: 15px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .modal__dialog-advantages__text hr {
   float: left;
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 .modal__dialog .descr {
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 25px;
+  padding-top: 53px;
+  padding-bottom: 75px;
+}
+
+.modal__dialog .descr ul {
+  padding-top: 28px;
+  padding-left: 0;
+  margin: 0;
 }
 
 .modal__dialog .descr li {
@@ -724,7 +776,7 @@ template {
   color: #ffd200;
   font-family: 'Museo Sans Bold', sans-serif;
   content: "•";
-  padding-right: 7px;
+  padding-right: 14px;
 }
 
 .modal__dialog-manager {
@@ -741,13 +793,22 @@ template {
 }
 
 .modal__dialog-manager__title {
-  font-size: 20px;
+  font-size: 22px;
   font-family: 'Museo Sans Bold', sans-serif;
-  line-height: 30px;
+  line-height: 33px;
+  margin-top: 80px;
+  margin-left: 143px;
+  margin-right: 136px;
+  margin-bottom: 52px;
+  text-align: center;
+  width: 291px;
+  height: 54px;
+  font-weight: 400;
 }
 
 .modal__dialog-manager__subtitle {
-  margin-bottom: 40px;
+  margin-bottom: 53px;
+  font-size: 16px;
 }
 
 .modal__dialog-form {
@@ -755,10 +816,10 @@ template {
 }
 
 .modal__dialog-form__input {
-  width: 350px;
-  height: 60px;
-  margin-bottom: 25px;
-  border: 2px solid #cccccc;
+  width: 370px;
+  height: 65px;
+  margin-bottom: 15px;
+  border: 1px solid #dddddd;
   border-radius: 10px;
   padding-left: 15px;
 }
@@ -768,22 +829,30 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 20px;
-  width: 350px;
-  height: 60px;
-  font-size: 15px;
+  margin-bottom: 33px;
+  width: 368px;
+  height: 70px;
+  font-size: 16px;
   font-family: 'Museo Sans Bold', sans-serif;
   border-radius: 10px;
 }
 
 .modal__dialog-form__text {
-  margin-bottom: 10px;
+  margin-bottom: 13px;
+  font-size: 15px;
+  width: 271px;
+  height: 35px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-left: 148px;
+  margin-right: 151px;
 }
 
 .modal__dialog-form__tel {
-  font-size: 20px;
+  font-size: 24px;
   font-family: 'Museo Sans Bold', sans-serif;
-  margin-bottom: 60px;
+  margin-bottom: 76px;
+  line-height: 24px;
 }
 
 *, *:after, *:before {
@@ -805,9 +874,21 @@ img {
   max-width: 100%;
 }
 
+.section-title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  line-height: 45px;
+}
+
+.section-title_center {
+  text-align: center;
+}
+
 @media (max-width: 1199px) {
   .container {
     width: 970px;
+  }
+  .slider__item img {
+    max-width: 95%;
   }
   .modal__dialog {
     width: 970px;
@@ -825,14 +906,54 @@ img {
   .feedback {
     background: #fff;
   }
+  .portfolio {
+    padding: 30px;
+  }
   .modal__dialog {
     width: 760px;
   }
+  .modal__dialog-advantages {
+    background-color: #fff;
+    padding-top: 20px;
+  }
+  .modal__dialog-advantages__text {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .modal__dialog-advantages .descr {
+    font-size: 10px;
+    line-height: 20px;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+  .modal__dialog-advantages .descr ul {
+    padding-top: 10px;
+  }
+  .modal__dialog-manager__title {
+    font-size: 18px;
+    line-height: 18px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+  .modal__dialog-manager__title__subtitle {
+    margin-bottom: 5px;
+  }
+  .modal__dialog-form {
+    display: block;
+  }
   .modal__dialog-form__input {
-    width: 270px;
+    width: 300px;
+    height: 30px;
   }
   .modal__dialog-form__button {
-    width: 270px;
+    margin-bottom: 8px;
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+  }
+  .modal__dialog-form__tel {
+    font-size: 18px;
   }
 }
 
@@ -856,6 +977,13 @@ img {
   .main-text__title {
     text-align: center;
   }
+  .portfolio {
+    padding: 30px;
+  }
+  .portfolio .section-title {
+    font-size: 15px;
+    line-height: 35px;
+  }
   .modal__dialog {
     width: 570px;
     margin: auto;
@@ -876,14 +1004,17 @@ img {
     padding: 0;
     margin: 0;
   }
-  .modal__dialog-manager__title {
+  .modal__dialog-advantages-manager__title {
     font-size: 20px;
-    line-height: 18px;
-    margin: auto;
+    width: none;
+    height: none;
+    margin-left: none;
+    margin-right: none;
+    text-align: center;
     padding-top: 10px;
     padding-bottom: 15px;
   }
-  .modal__dialog-manager__title__subtitle {
+  .modal__dialog-advantages-manager__title__subtitle {
     margin-bottom: 5px;
   }
   .modal__dialog-form {
@@ -904,6 +1035,14 @@ img {
     width: 250px;
     height: 30px;
     font-size: 15px;
+  }
+  .modal__dialog-form__text {
+    width: 250px;
+    height: 35px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .modal__dialog-form__tel {
     font-size: 18px;
@@ -990,10 +1129,18 @@ img {
     line-height: 20px;
     margin-bottom: 50px;
   }
+  .portfolio {
+    padding: 20px;
+  }
+  .portfolio .section-title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .portfolio img {
+    max-width: 75%;
+  }
   .modal__dialog {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     width: 320px;
     background-color: #fff;
     -webkit-box-pack: center;
@@ -1006,36 +1153,67 @@ img {
   }
   .modal__dialog-advantages__item {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   .modal__dialog-advantages__text {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     font-size: 12px;
+    line-height: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .modal__dialog-advantages__text hr {
+    display: none;
+  }
+  .modal__dialog-manager {
+    padding: 0 auto;
+    margin: 0 auto;
   }
   .modal__dialog-manager__title {
-    font-size: 15px;
-    line-height: 15px;
-    margin: auto;
-    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+    height: 100px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .modal__dialog__subtitle {
-    margin-bottom: 7px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 11px;
+    height: none;
+    font-weight: none;
+    line-height: 1px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .modal__dialog-form {
-    display: block;
+    display: flexbox;
   }
   .modal__dialog-form__input {
-    width: 120px;
-    height: 20px;
-    font-size: 7px;
+    width: 200px;
+    height: 30px;
+    font-size: 11px;
   }
   .modal__dialog-form__button {
-    margin-bottom: 8px;
-    width: 120px;
-    height: 20px;
-    font-size: 10px;
+    width: 200px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .modal__dialog-form__text {
+    width: none;
+    height: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
   }
   .modal__dialog-form__tel {
     font-size: 15px;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
