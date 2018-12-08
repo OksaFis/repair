@@ -1,0 +1,353 @@
+.phone {
+  width: auto;
+  height: auto;
+  
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone__dialog {
+  width: 1930px;
+  height: 670px;
+  background-color: #fefefe;
+  margin: 0 auto;
+  display: flex;
+  
+}
+
+.phone__dialog-advantages {
+  padding-top: 106px;
+  padding-left: 0 auto;
+  background-color:#ffc000;
+  display: block;
+  width: 54%;
+  padding-bottom: 109px;
+}
+
+.phone__dialog-advantages__title {
+  color: #000000;
+  font-size: 22px;
+  line-height: 33px;
+  padding-left: 376px;
+  padding-right: 150px;
+}
+
+.descr-dialog {
+  display: block;
+  padding-top: 50px;
+  padding-left: 443px;
+  padding-right: 219px;
+}
+.descr-dialog_subtitle {
+  font-size: 16px;
+  color: #000000;
+  line-height: 45px;
+  width: 303px;
+  padding-left: 0; 
+  
+}
+ol {
+  padding-top: 103px;
+  font-size: 18px;
+  counter-reset: myCounter;
+  margin: 0;
+  padding-left: 0;
+  
+}
+li {
+  padding-bottom: 40px;
+  list-style-type: none;
+  
+}
+li:before {
+  counter-increment: myCounter;
+  content:counter(myCounter);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #000000; 
+  margin-right: 0;
+  background-size: 14px;
+  background-repeat: no-repeat;
+  position: absolute;
+  text-align: center;
+  left: 376px;
+   
+}
+.phone__dialog-form {
+  padding-top: 103px;
+  background: url('../img/phone_fone.png') no-repeat;
+  display: block;
+  width: 46%;
+  
+}
+.phone__dialog-form_title {
+  width: 336px;
+  height: 54px;
+  color: #333333;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  margin-bottom: 52px;
+  margin-left: 152px;
+}
+.phone__dialog-form_subtitle {
+  color: #333333;
+  font-size: 16px;
+  line-height: 35px;
+  padding-bottom: 49px;
+  margin-left: 193px;
+}
+input {
+  width: 370px;
+  height: 65px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  margin-left: 134px;
+  display: block;
+  margin-bottom: 15px;
+}
+button {
+  width: 368px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #ffd200;
+  display: block;
+  margin-left: 134px;
+  margin-top: 30px;
+  margin-bottom: 33px;
+}
+.phone-manager{
+  color: #333333;
+  font-size: 15px;
+  line-height: 24px;
+  margin-left: 173px;
+}
+
+
+
+
+@media (max-width: 1900px) {
+  .phone__dialog {
+    width: 1200px;
+  }
+   
+  .phone__dialog-advantages__title {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .descr-dialog {
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  ol {
+    padding-top: 50px;
+    font-size: 15px;
+  }
+  
+  li:before {
+    left: 60px;
+  }
+}
+@media (max-width: 1199px) {
+  .phone__dialog {
+    width: 996px;
+  }
+  .phone__dialog-advantages {
+    padding-left: 50px;
+    padding-top: 30px;
+    }
+  .phone__dialog-advantages__title {
+    font-size: 20px;
+    line-height: 28px;
+    }
+        
+    li:before {
+     left: 0;
+  }
+  .phone__dialog-form {
+    padding-top: 30px;
+    justify-content: left;
+  }
+  .phone__dialog-form_title {
+    margin-left: 20px;
+    text-align: center;
+  }
+  .phone__dialog-form_subtitle {
+    margin-left: o;
+    margin-left: 40px;
+  }
+  input {
+    width: 300px;
+    margin-left: o;
+  }
+  button {
+    width: 300px;
+    margin-left: o;
+    
+  }
+  .phone-manager{
+    margin-left: o;
+  }
+}
+@media (max-width: 992px) {
+  .phone__dialog {
+    width: 769px;
+    margin-top: 50px;
+  }
+  .phone__dialog-advantages {
+    padding-left: 10px;
+    padding-top: 10px;
+    }
+  .phone__dialog-advantages__title {
+    font-size: 15px;
+    line-height: 20px;
+    padding-left: 20px;
+    }
+        
+    li:before {
+     left: 10px;
+  }
+  .phone__dialog-form {
+    padding-top: 30px;
+    justify-content: center;
+  }
+  .phone__dialog-form_title {
+    margin-left: 10px;
+  }
+  .phone__dialog-form_subtitle {
+    margin-left: 10px;
+  }
+  input {
+    width: 300px;
+    margin-left: 10px;
+  }
+  button {
+    width: 300px;
+    margin-left: 10px;
+    
+  }
+  .phone-manager{
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .phone {
+    display: grid;
+  }
+   
+  .phone__dialog {
+    width: 577px;
+    display: grid;
+    justify-content: center;
+  }
+  .phone__dialog-advantages {
+    padding-left: 30px;
+    padding-top: 25px;
+    width: 100%;
+    }
+  .phone__dialog-advantages__title {
+    font-size: 17px;
+    line-height: 15px;
+    display: inline-block;
+    padding-right: 0;
+  }
+    
+  .descr-dialog {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 0;
+    }
+    .descr-dialog_subtitle {
+      font-size: 14px;
+      line-height: 25px;
+      padding-left: 0; 
+    }
+        
+    li:before {
+     left: 10px;
+  }
+  .phone__dialog-form {
+    padding-top: 30px;
+    justify-content: center;
+    width: 100%;
+  }
+  .phone__dialog-form_title {
+    margin-left: o;
+  }
+  .phone__dialog-form_subtitle {
+    margin-left: o;
+  }
+  input {
+    width: 300px;
+    margin-left: o;
+  }
+  button {
+    width: 300px;
+    margin-left: o;
+    
+  }
+  .phone-manager{
+    margin-left: o;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .phone__dialog {
+    width: 320px;
+    display: grid;
+  }
+  .phone__dialog-advantages {
+    padding-left: 0;
+    padding-top: 30px;
+    
+    }
+  .phone__dialog-advantages__title {
+    font-size: 15px;
+    line-height: 15px;
+    }
+    .descr-dialog {
+      padding-top: 40px;
+      padding-left: 60px;
+      padding-right: 0;
+      
+    }
+    .descr-dialog_subtitle {
+      line-height: 45px;
+      width: 200px;
+      padding-left: 0; 
+      
+    }
+        
+    li:before {
+     left: 10px;
+  }
+  .phone__dialog-form {
+    padding-top: 30px;
+    justify-content: center;
+  }
+  .phone__dialog-form_title {
+    margin-left: 5px;
+  }
+  .phone__dialog-form_subtitle {
+    margin-left: 10px;
+  }
+  input {
+    width: 300px;
+    margin-left: 10px;
+  }
+  button {
+    width: 300px;
+    margin-left: 10px;
+    
+  }
+  .phone-manager{
+    margin-left: 10px;
+  }
+}
