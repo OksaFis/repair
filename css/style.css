@@ -861,7 +861,8 @@ template {
   padding-left: 0 auto;
   background-color: #ffc000;
   display: block;
-  width: 54%;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
   padding-bottom: 109px;
 }
 
@@ -894,7 +895,8 @@ template {
   padding-top: 103px;
   background: url("../img/phone_fone.png") no-repeat;
   display: block;
-  width: 46%;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
 }
 
 .phone__dialog-form__title {
@@ -943,6 +945,56 @@ template {
   font-size: 15px;
   line-height: 24px;
   margin-left: 173px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.map {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  min-height: 645px;
+}
+
+.contacts {
+  padding-top: 102px;
+  padding-left: 135px;
+  padding-bottom: 80px;
+}
+
+.contacts__title {
+  font-size: 22px;
+  line-height: 33px;
+  color: #2c3442;
+  font-family: 'Museo Sans Bold', sans-serif;
+  padding-bottom: 107px;
+}
+
+.contacts__address {
+  display: flex-box;
+}
+
+.contacts__address_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts__address-img {
+  max-width: 23px;
+  max-height: 23px;
+  padding-right: 20px;
+  margin: 0;
+}
+
+.contacts__address-text {
+  font-size: 16px;
+  line-height: 26px;
+  width: 178px;
+  padding-bottom: 55px;
 }
 
 .modal {
