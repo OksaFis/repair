@@ -1,9 +1,11 @@
 .portfolio
-    padding-top: 100px 
     padding-bottom: 187px
-    padding-left: 0
-    padding-right: 0
     background: url('../img/portfolio/bg-slider.png') repeat
+.section-title_center
+    font-size: 30px
+    padding-top: 100px
+    padding-bottom: 99px
+
     
 .slider
     &__item
@@ -11,13 +13,12 @@
         img
             margin: auto //когда картинка съезжает влево в миниверсии//
             padding: 0 10px
-
-
 .arrow
     width: 45px
     height: 19px
     background-color: #000
     position: absolute
+    padding-top: 166px
     a:hover
         cursor: pointer
 
@@ -27,8 +28,9 @@
         background-size: 100%
         transform: translateX(15px)
     &_left
-        left: 50%
+       
         background: url('../img/arrow-left.png') no-repeat center
+        background-size: 100%
         transform: translateX(-45px)
         margin-left: -15px
 
