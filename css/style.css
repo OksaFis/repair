@@ -755,11 +755,11 @@ template {
 
 .dogovor {
   background-color: #ffffff;
+  padding-top: 168px;
 }
 
 .section-title {
   font-style: 30px;
-  padding-top: 162px;
   padding-bottom: 70px;
   font-family: 'Museo Sans Bold', sans-serif;
 }
@@ -856,81 +856,84 @@ template {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.work-guarantee-wrap-box {
+  display: block;
+}
+
+.work-guarantee-wrap-item {
+  display: block;
+  margin: 0 auto;
 }
 
 .work-guarantee-wrap-item__img {
-  width: 215px;
-  height: 306px;
-  padding: 30px;
+  padding: 0 auto;
 }
 
 .work-guarantee-wrap-item__text {
-  font-size: 18px;
+  text-align: center;
   line-height: 24px;
 }
 
 .phone {
-  width: auto;
-  height: auto;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 10px;
 }
 
 .phone__dialog {
-  width: 1930px;
   height: 670px;
   background-color: #fefefe;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .phone__dialog-advantages {
-  padding-top: 106px;
-  padding-left: 0 auto;
+  padding-left: 360px;
+  padding-right: 215px;
+  padding-top: 100px;
   background-color: #ffc000;
-  display: block;
   -ms-flex-preferred-size: 55%;
       flex-basis: 55%;
-  padding-bottom: 109px;
 }
 
 .phone__dialog-advantages__title {
   color: #000000;
   font-size: 22px;
   line-height: 33px;
-  padding-left: o auto;
-  padding-right: o auto;
-  text-align: center;
+  padding-bottom: 45px;
 }
 
 .phone__dialog-advantages__subtitle {
   font-size: 16px;
   color: #000000;
   line-height: 45px;
-  padding-left: o auto;
-  text-align: center;
+  padding-bottom: 70px;
 }
 
 .phone__dialog-advantages__descr {
   display: block;
-  padding-top: 50px;
-  padding-left: 100px;
-  padding-right: auto;
+  padding-bottom: 100px;
+}
+
+.phone__dialog-advantages__descr-text {
   line-height: 40px;
+  font-size: 18px;
 }
 
 .phone__dialog-form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 103px;
   background: url("../img/phone_fone.png") no-repeat;
   display: block;
@@ -1263,21 +1266,6 @@ img {
   text-align: center;
 }
 
-@media (max-width: 1900px) {
-  .phone__dialog {
-    width: 1200px;
-  }
-  .phone__dialog-advantages__title {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-  .phone__dialog__descr {
-    padding-top: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-}
-
 @media (max-width: 1199px) {
   .container {
     width: 970px;
@@ -1341,11 +1329,9 @@ img {
   }
   .phone__dialog {
     width: 769px;
-    margin-top: 50px;
   }
   .phone__dialog-advantages {
     padding-left: 10px;
-    padding-top: 10px;
   }
   .phone__dialog-advantages__title {
     font-size: 15px;
