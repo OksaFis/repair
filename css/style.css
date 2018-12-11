@@ -619,14 +619,8 @@ template {
 }
 
 .portfolio {
-  padding-bottom: 187px;
+  padding: 100px 0;
   background: url("../img/portfolio/bg-slider.png") repeat;
-}
-
-.section-title_center {
-  font-size: 30px;
-  padding-top: 100px;
-  padding-bottom: 99px;
 }
 
 .slider__item {
@@ -643,7 +637,7 @@ template {
   height: 19px;
   background-color: #000;
   position: absolute;
-  padding-top: 166px;
+  bottom: -68px;
 }
 
 .arrow a:hover {
@@ -659,8 +653,8 @@ template {
 }
 
 .arrow_left {
+  left: 50%;
   background: url("../img/arrow-left.png") no-repeat center;
-  background-size: 100%;
   -webkit-transform: translateX(-45px);
           transform: translateX(-45px);
   margin-left: -15px;
@@ -830,6 +824,51 @@ template {
   line-height: 50px;
 }
 
+.work {
+  padding-top: 100px;
+}
+
+.work-buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.work-buy__img {
+  padding: 25px;
+}
+
+.work-guarantee {
+  padding-bottom: 228px;
+}
+
+.work-guarantee__title {
+  padding-bottom: 131px;
+  padding-top: 143px;
+  line-height: 45px;
+}
+
+.work-guarantee-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.work-guarantee-wrap-item__img {
+  width: 215px;
+  height: 306px;
+  padding: 30px;
+}
+
+.work-guarantee-wrap-item__text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .phone {
   width: auto;
   height: auto;
@@ -956,21 +995,24 @@ template {
 .map {
   -ms-flex-preferred-size: 55%;
       flex-basis: 55%;
-  min-height: 645px;
+  min-height: 640px;
 }
 
 .contacts {
-  padding-top: 102px;
-  padding-left: 135px;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  min-height: 640px;
+  padding-top: 100px;
+  padding-left: 134px;
   padding-bottom: 80px;
 }
 
 .contacts__title {
   font-size: 22px;
-  line-height: 33px;
+  line-height: 45px;
   color: #2c3442;
   font-family: 'Museo Sans Bold', sans-serif;
-  padding-bottom: 107px;
+  padding-bottom: 100px;
 }
 
 .contacts__address {
@@ -984,7 +1026,6 @@ template {
 }
 
 .contacts__address-img {
-  max-width: 23px;
   max-height: 23px;
   padding-right: 20px;
   margin: 0;
@@ -994,7 +1035,7 @@ template {
   font-size: 16px;
   line-height: 26px;
   width: 178px;
-  padding-bottom: 55px;
+  padding-bottom: 46px;
 }
 
 .modal {
