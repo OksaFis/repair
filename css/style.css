@@ -837,20 +837,23 @@ template {
 }
 
 .work-buy__img {
-  padding: 25px;
+  padding: 30px;
+  width: 370px;
+  height: 410px;
 }
 
-.work-guarantee {
+.guarantee {
   padding-bottom: 228px;
+  margin: 0 auto;
 }
 
-.work-guarantee__title {
-  padding-bottom: 131px;
+.guarantee__title {
+  padding-bottom: 99px;
   padding-top: 143px;
   line-height: 45px;
 }
 
-.work-guarantee-wrap {
+.guarantee-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -862,20 +865,23 @@ template {
           justify-content: center;
 }
 
-.work-guarantee-wrap-box {
+.guarantee-wrap-box {
   display: block;
 }
 
-.work-guarantee-wrap-item {
+.guarantee-wrap-item {
   display: block;
   margin: 0 auto;
 }
 
-.work-guarantee-wrap-item__img {
+.guarantee-wrap-item__img {
   padding: 0 auto;
+  width: 270px;
+  height: 360px;
 }
 
-.work-guarantee-wrap-item__text {
+.guarantee-wrap-item__text {
+  padding-top: 41px;
   text-align: center;
   line-height: 24px;
 }
@@ -1327,7 +1333,17 @@ img {
   .portfolio {
     padding-bottom: 100px;
   }
+  .work-buy {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .guarantee-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .phone__dialog {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 769px;
   }
   .phone__dialog-advantages {
@@ -1360,6 +1376,10 @@ img {
   }
   .phone__dialog-form__manager {
     margin-left: 10px;
+  }
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .modal__dialog {
     width: 760px;
@@ -1438,6 +1458,7 @@ img {
   }
   .dogovor {
     background-color: #ffffff;
+    padding-top: 30px;
   }
   .section-title {
     font-style: 20px;
@@ -1448,7 +1469,11 @@ img {
     padding-bottom: 40px;
   }
   .step {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     max-width: 146px;
     max-height: 166px;
     -webkit-box-pack: center;
@@ -1457,16 +1482,31 @@ img {
     text-align: center;
   }
   .step_wrap {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .work-buy {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .guarantee-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .guarantee-wrap__title {
+    padding-top: 60px;
+    font-style: 15px;
   }
   .phone {
-    display: -ms-grid;
-    display: grid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .phone__dialog {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 577px;
-    display: -ms-grid;
-    display: grid;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1474,12 +1514,12 @@ img {
   .phone__dialog-advantages {
     padding-left: 30px;
     padding-top: 25px;
-    width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .phone__dialog-advantages__title {
     font-size: 17px;
     line-height: 15px;
-    display: inline-block;
     padding-right: 0;
   }
   .phone__dialog-advantages__subtitle {
@@ -1497,7 +1537,8 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .phone__dialog-form__title {
     margin-left: o;
@@ -1516,6 +1557,18 @@ img {
   .phone__dialog-form__manager {
     margin-left: o;
     margin-bottom: 20px;
+  }
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .map {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .contacts {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .modal__dialog {
     width: 570px;
@@ -1682,12 +1735,16 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding-bottom: 50px;
   }
   .step {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .dogovor-public {
     background-color: #ffc000;
@@ -1698,17 +1755,25 @@ img {
     font-size: 25px;
     line-height: 30px;
   }
+  .work-buy {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .guarantee-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .phone__dialog {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 320px;
-    display: -ms-grid;
-    display: grid;
   }
   .phone__dialog-advantages {
     padding-left: 0;
     padding-top: 30px;
   }
   .phone__dialog-advantages__title {
-    font-size: 15px;
+    font-style: 15px;
     line-height: 15px;
   }
   .phone__dialog-advantages__subtitle {
@@ -1743,6 +1808,13 @@ img {
   }
   .phone__dialog-form__manager {
     margin-left: 10px;
+  }
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contacts__address {
+    position: absolute;
   }
   .modal__dialog {
     display: block;
