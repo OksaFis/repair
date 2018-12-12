@@ -345,34 +345,38 @@
     </section>      
 
     <section class="phone">
-      <div class="phone__dialog">
-        <div class="phone__dialog-advantages">
-                    <h2 class="phone__dialog-advantages__title">Мы можем озвучить Вам примерную стоимость работы и материалов по телефону
-                    </h2>
-                    <h3 class="phone__dialog-advantages__subtitle">Для этого нужно ответить на 4 вопроса:</h3>
-                    <div class="phone__dialog-advantages__descr">
-                
-                    <div class="phone__dialog-advantages__descr-text">Какова площадь помещения?</div>
-                    <div class="phone__dialog-advantages__descr-text">У Вас новостройка или вторичное жилье?</div>
-                    <div class="phone__dialog-advantages__descr-text" >Где находится помещение, в котором будет производиться ремонт?</div>
-                    <div class="phone__dialog-advantages__descr-text">Назначение помещения?</div>
+      <div class="container">
+          <div class="phone__dialog">
+            <div class="phone__dialog-advantages">
+                        <h2 class="phone__dialog-advantages__title">Мы можем озвучить Вам примерную стоимость работы и материалов по телефону
+                        </h2>
+                        <h3 class="phone__dialog-advantages__subtitle">Для этого нужно ответить на 4 вопроса:</h3>
+                        <div class="phone__dialog-advantages__descr">
+                            <li id="first">Какова площадь помещения?</li>                    
+                            <li id="second">У Вас новостройка или вторичное жилье?</li>                    
+                            <li id="tree">Где находится помещение, в котором будет производиться ремонт?</li>                    
+                            <li id="four">Назначение помещения?</li>                    
+                            
+                    </div>
                 </div>
-            </div>
-                    
-                <div class="phone__dialog-form"> 
-                    <div class="phone__dialog-form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</div>
-                    <div class="phone__dialog-form__subtitle">Для этого заполните форму ниже</div>
-    
-                    
-                <form action="mailer/smart.php" method="POST">
-                        <input type="text" name="fio" class="input phone__dialog-form__input" required placeholder="Ваше имя">
-                        <input type="tel" name="phone" class="input phone__dialog-form__input" required placeholder="Ваш телефон">
-                        <button type="submit" class="button phone__dialog-form__button">Рассчитать стоимость
-                        </button>
-                    </form>
-                    <div class="phone__dialog-form__manager">Мы перезвоним Вам в течение 60 секунд</div>
-    
-                </div>  
+                        
+                    <div class="phone__dialog-form"> 
+                        <div class="phone__dialog-form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</div>
+                        <div class="phone__dialog-form__subtitle">Для этого заполните форму ниже</div>
+        
+                        
+                      <form action="mailer/smart.php" method="POST">
+                              <input type="text" name="fio" class="input phone__dialog-form__input" required placeholder="Ваше имя">
+                              <input type="tel" name="phone" class="input phone__dialog-form__input" required placeholder="Ваш телефон">
+                              <button type="submit" class="button phone__dialog-form__button">Рассчитать стоимость
+                              </button>
+                          </form>
+                          <div class="phone__dialog-form__manager">Мы перезвоним Вам в течение 60 секунд</div>
+          
+                      </div>    
+                  </div>
+                </div>
+      </section>
                 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
                 <script>
                     $('form').submit(function(event) {
@@ -390,15 +394,15 @@
                     });
                    
                 </script>
-                </div>
-                </section>
+            
 
                 <footer class="footer">
-                    <div class="map">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2cbb1a6a4a47e2e1d8ee0d674196f50e5780d9690c0f4a6c39c0f588b9934a0e&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
-                    </div>
+                   <div class="map">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2cbb1a6a4a47e2e1d8ee0d674196f50e5780d9690c0f4a6c39c0f588b9934a0e&amp;width=100%25&amp;height=800&amp;lang=ru_RU&amp;scroll=false"></script>
+                     </div> 
+                     
                     <div class="contacts">
-                    <span class="hidden-xs"><h2 class="contacts__title">Приезжайте к нам в гости!<br>
+                        <span class="hidden-xs"><h2 class="contacts__title">Приезжайте к нам в гости!<br>
                           Проконсультируем Вас <br>
                           по всем вопросам ремонта
                           </h2></span>
@@ -422,7 +426,7 @@
                                         </div>
 
                           </div>
-                    </div>
+                    </div>              
 
 
                 </footer>
