@@ -539,7 +539,6 @@ template {
 }
 
 .form__title {
-  font-size: 24px;
   font-family: 'Museo Sans Bold', sans-serif;
   line-height: 35px;
   margin-bottom: 45px;
@@ -574,17 +573,11 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .form__output-item {
   font-size: 15px;
-  display: block;
   width: 235px;
-  height: 39px;
-  margin-right: 78px;
 }
 
 .form__output-item-sign {
@@ -594,7 +587,6 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 18px;
 }
 
 .form__output-img {
@@ -618,8 +610,6 @@ template {
   display: block;
   color: #333;
   font-family: 'Museo Sans Bold', sans-serif;
-  font-size: 15px;
-  font-size: 15px;
   line-height: 24px;
 }
 
@@ -682,12 +672,10 @@ template {
 .price .section-title {
   padding-top: 100px;
   padding-bottom: 58px;
-  font-size: 30px;
 }
 
 .price .section-subtitle {
   padding-bottom: 59px;
-  font-size: 20px;
 }
 
 .price-wrap {
@@ -778,14 +766,11 @@ template {
 }
 
 .section-title {
-  font-style: 30px;
   padding-bottom: 70px;
-  font-family: 'Museo Sans Bold', sans-serif;
 }
 
 .section-subtitle {
   padding-bottom: 69px;
-  font-style: 20px;
 }
 
 .dogovor-wrap {
@@ -803,10 +788,6 @@ template {
   display: block;
   max-width: 146px;
   max-height: 166px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
 }
 
 .step_wrap {
@@ -824,6 +805,7 @@ template {
 
 .step_wrap-img-title {
   font-size: 14px;
+  line-height: 20px;
   font-family: "Museo Sans Cyrl -300";
   text-align: center;
 }
@@ -833,6 +815,7 @@ template {
 }
 
 .dogovor-public {
+  height: 282px;
   background-color: #ffc000;
 }
 
@@ -851,14 +834,28 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.work-buy__img {
-  padding: 30px;
-  width: 370px;
-  height: 410px;
+.work-buy-wrap {
+  width: 371px;
+  min-height: 407px;
+  background-color: #f7f7f7;
+}
+
+.work-buy-wrap__text {
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+  padding-left: 24px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.work-buy-wrap__img {
+  width: 376px;
+  height: 292px;
 }
 
 .guarantee {
@@ -900,6 +897,7 @@ template {
 
 .guarantee-wrap-item__text {
   padding-top: 41px;
+  font-size: 18px;
   text-align: center;
   line-height: 24px;
 }
@@ -912,7 +910,6 @@ template {
   background-size: contain;
   position: relative;
   z-index: 1;
-  height: 660px;
 }
 
 .phone:before {
@@ -942,26 +939,31 @@ template {
   width: 516px;
   font-size: 22px;
   line-height: 33px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+  color: #000000;
+  font-family: 'Museo Sans Bold', sans-serif;
 }
 
 .phone__dialog-advantages__subtitle {
   font-size: 16px;
   color: #000000;
   line-height: 45px;
-  margin-bottom: 89px;
+  margin-bottom: 97px;
 }
 
 .phone__dialog-advantages__descr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 449px;
+  width: 447px;
+  height: 242px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 18px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  color: #000000;
 }
 
 .phone__dialog-advantages__descr li {
@@ -1008,27 +1010,21 @@ template {
 }
 
 .phone__dialog-form {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
   padding-top: 103px;
+  padding-left: 133px;
   display: block;
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  -ms-flex-preferred-size: 44%;
+      flex-basis: 44%;
 }
 
 .phone__dialog-form__title {
-  width: 336px;
   height: 54px;
   color: #333333;
+  font-family: 'Museo Sans Bold', sans-serif;
   font-size: 22px;
-  font-weight: 400;
   line-height: 33px;
   margin-bottom: 52px;
-  margin-left: 152px;
 }
 
 .phone__dialog-form__subtitle {
@@ -1036,27 +1032,25 @@ template {
   font-size: 16px;
   line-height: 35px;
   padding-bottom: 49px;
-  margin-left: 193px;
 }
 
 .phone__dialog-form__input {
   width: 370px;
   height: 65px;
+  font-size: 15px;
   border-radius: 10px;
   border: 1px solid #dddddd;
   background-color: #ffffff;
-  margin-left: 134px;
-  display: block;
   margin-bottom: 15px;
 }
 
 .phone__dialog-form__button {
   width: 368px;
   height: 70px;
+  font-size: 16px;
+  color: #333333;
   border-radius: 10px;
   background-color: #ffd200;
-  display: block;
-  margin-left: 134px;
   margin-top: 30px;
   margin-bottom: 33px;
 }
@@ -1065,10 +1059,17 @@ template {
   color: #333333;
   font-size: 15px;
   line-height: 24px;
-  margin-left: 173px;
+  margin-bottom: 93px;
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.footer-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1077,7 +1078,7 @@ template {
 .map {
   -ms-flex-preferred-size: 56%;
       flex-basis: 56%;
-  height: 800px;
+  width: 100%;
 }
 
 .contacts {
@@ -1089,9 +1090,9 @@ template {
 }
 
 .contacts__title {
-  font-size: 22px;
+  font-size: 24px;
   line-height: 45px;
-  color: #2c3442;
+  color: #000000;
   font-family: 'Museo Sans Bold', sans-serif;
   padding-bottom: 100px;
 }
@@ -1333,6 +1334,7 @@ img {
 .section-title {
   font-family: 'Museo Sans Bold', sans-serif;
   line-height: 45px;
+  font-size: 30px;
 }
 
 .section-title_center {
@@ -1346,13 +1348,13 @@ img {
 
 @media (max-width: 1199px) {
   .container {
-    width: 970px;
+    width: 990px;
   }
   .slider__item img {
     max-width: 95%;
   }
   .phone__dialog {
-    width: 996px;
+    width: 990px;
   }
   .phone__dialog-advantages {
     padding-left: 50px;
@@ -1364,37 +1366,24 @@ img {
   }
   .phone__dialog-form {
     padding-top: 30px;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-  }
-  .phone__dialog-form__title {
-    margin-left: 20px;
-    text-align: center;
-  }
-  .phone__dialog-form_subtitle {
-    margin-left: o;
-    margin-left: 40px;
   }
   .phone__dialog-form__input {
     width: 300px;
-    margin-left: o;
   }
   .phone__dialog-form__button {
     width: 300px;
-    margin-left: o;
   }
-  .phone__dialog-form__manager {
-    margin-left: o;
+  .footer {
+    width: 990px;
   }
   .modal__dialog {
-    width: 970px;
+    width: 990px;
   }
 }
 
 @media (max-width: 992px) {
   .container {
-    width: 767px;
+    width: 769px;
   }
   .main-text__title {
     font-size: 30px;
@@ -1428,33 +1417,19 @@ img {
   }
   .phone__dialog-form {
     padding-top: 30px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .phone__dialog-form__title {
-    margin-left: 10px;
-  }
-  .phone__dialog-form__subtitle {
-    margin-left: 10px;
   }
   .phone__dialog-form__input {
     width: 300px;
-    margin-left: 10px;
   }
   .phone__dialog-form__button {
     width: 300px;
-    margin-left: 10px;
-  }
-  .phone__dialog-form__manager {
-    margin-left: 10px;
   }
   .footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .modal__dialog {
-    width: 760px;
+    width: 769px;
   }
   .modal__dialog-advantages {
     background-color: #fff;
@@ -1579,9 +1554,6 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 577px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .phone__dialog-advantages {
     padding-left: 30px;
@@ -1592,7 +1564,6 @@ img {
   .phone__dialog-advantages__title {
     font-size: 17px;
     line-height: 15px;
-    padding-right: 0;
   }
   .phone__dialog-advantages__subtitle {
     font-size: 14px;
@@ -1863,23 +1834,6 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .phone__dialog-form__title {
-    margin-left: 5px;
-  }
-  .phone__dialog-form__subtitle {
-    margin-left: 10px;
-  }
-  .phone__dialog-form__input {
-    width: 300px;
-    margin-left: 10px;
-  }
-  .phone__dialog-form__button {
-    width: 300px;
-    margin-left: 10px;
-  }
-  .phone__dialog-form__manager {
-    margin-left: 10px;
   }
   .footer {
     -ms-flex-wrap: wrap;
