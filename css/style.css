@@ -519,7 +519,7 @@ template {
   background: url("../img/feedback/feedback-bg.png") no-repeat center left 100%;
   background-size: contain;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   height: 600px;
 }
 
@@ -617,7 +617,7 @@ template {
   padding-top: 100px;
   padding-bottom: 180px;
   background: url("../img/portfolio/bg-slider.png");
-  z-index: -1;
+  z-index: 1;
   position: relative;
 }
 
@@ -907,7 +907,7 @@ template {
   background: url(../img/phone_fone.png) no-repeat center left 100%;
   background-size: contain;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 .phone:before {
@@ -1125,7 +1125,7 @@ template {
   background-color: rgba(0, 0, 0, 0.52);
   left: 0;
   top: 0;
-  z-index: 99%;
+  z-index: 99;
   display: none;
 }
 
