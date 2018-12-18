@@ -1,31 +1,40 @@
 @media (max-width: 1199px)
     .container
-        width: 990px
+        width: 992px
+    .portfolio
+        padding-top: 50px
     .slider
         &__item
             img
                 max-width: 95%
+    .price .section-title
+        padding-top: 50px
+    .dogovor
+        padding-top: 70px
+    .work
+        padding-top: 50px
+    .guarantee__title
+        padding-top: 70px
+        padding-bottom: 50px
     .phone__dialog 
-        width: 990px
-        &-advantages 
-            padding-left: 50px
-            padding-top: 30px
-            &__title
-                font-size: 20px
-                line-height: 28px
+        width: 992px
+        &-advantages
+            padding-top: 50px
+            padding-left: 20px
         &-form
-            padding-top: 30px
-            &__input 
+            padding-top: 50px
+            padding-left: 70px
+            &__input
                 width: 300px
             &__button
                 width: 300px
     .footer
-        width: 990px
-        
+        width: 992px
     .modal__dialog
-        width: 990px
+        width: 992px
 @media (max-width: 992px)
     .container
+        align-items: center
         width: 769px 
     .main
         &-text
@@ -33,23 +42,41 @@
                 font-size: 30px
     .feedback
         background: #fff
+        padding-top: 50px
     .portfolio
         padding-bottom: 100px
-    .work-buy
-        flex-wrap: wrap          
-    .guarantee-wrap
-        flex-wrap: wrap    
+    .work
+        &-buy
+            display: flex
+            &-wrap
+                &__text
+                    font-size: 12px
+    .guarantee
+        
+        padding-bottom: 100px
+        &__title
+            padding-top: 30px
+
     .phone__dialog
-        flex-wrap: wrap 
+        display: flex
         width: 769px
         &-advantages
             padding-left: 10px
             &__title 
-                font-size: 15px
-                line-height: 20px
-                padding-left: 20px
+                font-size: 20px
+                line-height: 30px
+                padding-left: 20px 
+                width: 370px
+            &__subtitle
+                margin-bottom: 40px
+            &__descr
+                width: 350px
         &-form
-            padding-top: 30px
+            padding-top: 50px
+            padding-left: 60px
+            &__title
+                font-size: 20px
+                line-height: 30px
             &__input
                 width: 300px
             &__button 
@@ -106,6 +133,7 @@
                 text-align: center
     .portfolio
         padding: 30px
+
     .section-title
         font-size: 15px
         line-height: 35px
@@ -113,7 +141,7 @@
         background-color: #ffffff
         padding-top: 30px
     .section-title
-        font-style: 20px
+        font-style: 25px
         padding-top: 100px
         padding-bottom: 40px
     .section-subtitle
@@ -138,7 +166,7 @@
         display: flex
         &__dialog 
             flex-wrap: wrap
-            width: 577px
+            width: 576px
             &-advantages 
                 padding-left: 30px
                 padding-top: 25px
@@ -149,27 +177,18 @@
                 &__subtitle 
                     font-size: 14px
                     line-height: 25px
-                    padding-left: 0 
                 &__descr
                     padding-top: 20px
                     padding-left: 30px
-                    padding-right: 0
             &-form 
                 padding-top: 30px
                 justify-content: center
                 flex-basis: 100%
-                &__title 
-                    margin-left: o
-                &__subtitle
-                    margin-left: o
                 &__input
                     width: 300px
-                    margin-left: o
                 &__button 
                     width: 300px
-                    margin-left: o
                 &__manager
-                    margin-left: o
                     margin-bottom: 20px
     .footer 
         flex-wrap: wrap 
@@ -190,14 +209,8 @@
             &__descr
                 font-size: 10px
                 line-height: 10px
-                padding: 0
-                margin: 0
         &-manager__title
             font-size: 20px
-            width: none
-            height: none
-            margin-left: none
-            margin-right: none
             text-align: center
             padding-top: 10px
             padding-bottom: 15px
@@ -264,7 +277,6 @@
             width: 235px
             height: 67px
             font-size: 16px
-            padding: 0
         &__output 
             display: inline-block
             width: 235px
@@ -322,7 +334,6 @@
         flex-wrap: wrap 
         width: 320px
         &-advantages
-            padding-left: 0
             padding-top: 30px
             &__title
                 font-style: 15px
@@ -330,11 +341,9 @@
             &__subtitle 
                 line-height: 45px
                 width: 200px
-                padding-left: 0 
             &__descr
                 padding-top: 40px
                 padding-left: 60px
-                padding-right: 0
         &-form
             padding-top: 30px
             justify-content: center
@@ -349,7 +358,6 @@
         background-color: #fff
         justify-content: center
         &-advantages
-            padding: auto
             background-color: #fff
             &__item
                 display: block
@@ -362,23 +370,14 @@
                 text-align: center
                 hr
                     display: none
-        &-manager
-            padding: 0 auto   
-            margin: 0 auto           
         &-manager__title
-            margin-left: auto
-            margin-right: auto
             width: 180px
             height: 100px
             justify-content: center
         &__subtitle
             display: inline-flex
             font-size: 11px
-            height: none
-            font-weight: none
             line-height: 1px
-            margin-left: auto
-            margin-right: auto
         &-form
             display: flexbox
             &__input
@@ -390,10 +389,6 @@
                 height: 30px
                 font-size: 12px
             &__text
-                width: none
-                height: none
-                margin-left: auto
-                margin-right: auto
                 margin-bottom: 20px
             &__tel
                 font-size: 15px
