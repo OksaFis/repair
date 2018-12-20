@@ -1215,6 +1215,10 @@ template {
   float: left;
   margin-top: 9px;
   margin-bottom: 9px;
+  width: 30%;
+  height: 2px;
+  background-color: #ffd200;
+  border: #ffd200;
 }
 
 .modal__dialog-advantages ul {
