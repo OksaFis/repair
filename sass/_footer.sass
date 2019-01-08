@@ -1,11 +1,23 @@
 .footer
   display: flex
-  height: 100%
+  background-color: #ffffff
+  background-size: cover
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    left: 0
+    top: 0
+    width: 56%
+    height: 100%
+    position: absolute
+    z-index: -1
   &-wrap
     display: flex
 .map
+  padding: 0
+  margin: 0
   flex-basis: 56%
-  width: 100%
 .contacts
   flex-basis: 44%
   padding-top: 100px
@@ -30,6 +42,3 @@
       line-height: 26px
       width: 178px
       padding-bottom: 46px
-
-
-    

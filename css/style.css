@@ -850,6 +850,7 @@ template {
   color: #000000;
   padding-left: 24px;
   padding-top: 30px;
+  padding-bottom: 53px;
 }
 
 .work-buy-wrap__img {
@@ -1069,7 +1070,20 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #ffffff;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.footer:before {
+  content: '';
+  left: 0;
+  top: 0;
+  width: 56%;
   height: 100%;
+  position: absolute;
+  z-index: -1;
 }
 
 .footer-wrap {
@@ -1079,9 +1093,10 @@ template {
 }
 
 .map {
+  padding: 0;
+  margin: 0;
   -ms-flex-preferred-size: 56%;
       flex-basis: 56%;
-  width: 100%;
 }
 
 .contacts {
@@ -1306,7 +1321,6 @@ template {
   font-size: 15px;
   width: 271px;
   height: 35px;
-  font-weight: 400;
   line-height: 20px;
   margin-left: 148px;
   margin-right: 151px;
@@ -1354,11 +1368,30 @@ img {
 }
 
 @media (max-width: 1199px) {
+  .section-title {
+    line-height: 38px;
+    font-size: 27px;
+  }
+  .section-subtitle {
+    font-size: 17px;
+  }
   .container {
-    width: 992px;
+    width: 993px;
+    margin: 9px;
+  }
+  .main-text__title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .feedback {
+    padding: 30px 0;
+  }
+  .feedback:before {
+    width: 100%;
   }
   .portfolio {
     padding-top: 50px;
+    padding-bottom: 100px;
   }
   .slider__item img {
     max-width: 95%;
@@ -1369,10 +1402,24 @@ img {
   .dogovor {
     padding-top: 70px;
   }
+  .dogovor-public {
+    height: auto;
+  }
+  .dogovor-public-title {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-size: 28px;
+    line-height: 40px;
+  }
   .work {
     padding-top: 50px;
   }
+  .guarantee {
+    padding-bottom: 80px;
+  }
   .guarantee__title {
+    line-height: 38px;
+    font-size: 27px;
     padding-top: 70px;
     padding-bottom: 50px;
   }
@@ -1394,7 +1441,40 @@ img {
     width: 300px;
   }
   .footer {
-    width: 992px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer .map {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .footer .contacts {
+    padding-left: 0;
+    text-align: center;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .footer .contacts__address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .contacts__address_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .modal__dialog {
     width: 992px;
@@ -1402,21 +1482,34 @@ img {
 }
 
 @media (max-width: 992px) {
+  .section-title {
+    line-height: 33px;
+    font-size: 25px;
+  }
+  .section-subtitle {
+    font-size: 15px;
+  }
   .container {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     width: 769px;
   }
-  .main-text__title {
-    font-size: 30px;
-  }
   .feedback {
-    background: #fff;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-top: 50px;
   }
   .portfolio {
     padding-bottom: 100px;
+  }
+  .dogovor-public-title {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 25px;
+    line-height: 33px;
   }
   .work-buy {
     display: -webkit-box;
@@ -1424,41 +1517,80 @@ img {
     display: flex;
   }
   .work-buy-wrap__text {
-    font-size: 12px;
+    font-size: 13px;
+  }
+  .work-buy-wrap__img {
+    padding-bottom: 0;
   }
   .guarantee {
     padding-bottom: 100px;
   }
   .guarantee__title {
+    font-size: 25px;
+    line-height: 33px;
     padding-top: 30px;
   }
-  .phone__dialog {
+  .guarantee-wrap-item__text {
+    font-size: 13px;
+  }
+  .phone {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background: none;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+  }
+  .phone:before {
+    height: 50%;
+    width: 100%;
+  }
+  .phone__dialog {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 769px;
+    margin: 0 auto;
   }
   .phone__dialog-advantages {
-    padding-left: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
   }
   .phone__dialog-advantages__title {
-    font-size: 20px;
-    line-height: 30px;
-    padding-left: 20px;
-    width: 370px;
-  }
-  .phone__dialog-advantages__subtitle {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 22px;
     margin-bottom: 40px;
   }
+  .phone__dialog-advantages__subtitle {
+    text-align: center;
+    margin-bottom: 50px;
+  }
   .phone__dialog-advantages__descr {
-    width: 350px;
+    width: 100%;
+    height: 100%;
   }
   .phone__dialog-form {
-    padding-top: 50px;
+    background: url(../img/phone_fone.png);
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-top: 0;
     padding-left: 60px;
   }
   .phone__dialog-form__title {
-    font-size: 20px;
+    padding-top: 20px;
+    font-size: 22px;
     line-height: 30px;
   }
   .phone__dialog-form__input {
@@ -1466,17 +1598,45 @@ img {
   }
   .phone__dialog-form__button {
     width: 300px;
+    background-color: #ffd200;
   }
   .footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 900px;
+  }
+  .footer-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer .map {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .footer .contacts {
+    text-align: center;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .footer__title {
+    font-size: 22px;
+    padding-bottom: 30px;
+  }
+  .footer__address {
+    padding-left: 50%;
+  }
+  .footer__address_wrap {
+    padding-left: 50%;
   }
   .modal__dialog {
     width: 769px;
   }
   .modal__dialog-advantages {
     background-color: #fff;
-    padding-top: 20px;
+    margin-top: 40px;
+    padding-left: 50px;
   }
   .modal__dialog-advantages__text {
     font-size: 12px;
@@ -1493,25 +1653,25 @@ img {
   }
   .modal__dialog-manager__title {
     font-size: 18px;
-    line-height: 18px;
+    line-height: 25px;
     margin: auto;
     padding-top: 10px;
-    padding-bottom: 25px;
+    margin-bottom: 35px;
   }
-  .modal__dialog-manager__title__subtitle {
-    margin-bottom: 5px;
+  .modal__dialog-manager__subtitle {
+    margin-bottom: 35px;
   }
   .modal__dialog-form {
     display: block;
   }
   .modal__dialog-form__input {
     width: 300px;
-    height: 30px;
+    height: 50px;
   }
   .modal__dialog-form__button {
-    margin-bottom: 8px;
+    margin-bottom: 35px;
     width: 300px;
-    height: 30px;
+    height: 50px;
     font-size: 15px;
   }
   .modal__dialog-form__tel {
@@ -1523,8 +1683,19 @@ img {
   .hidden-xs {
     display: none;
   }
+  .section-title {
+    line-height: 30px;
+    font-size: 22px;
+  }
+  .section-subtitle {
+    font-size: 14px;
+    line-height: 25px;
+  }
   .container {
-    width: 95%;
+    width: 577px;
+  }
+  .main {
+    padding: 20px 0;
   }
   .main-wrap {
     -webkit-box-orient: vertical;
@@ -1537,26 +1708,53 @@ img {
     margin: auto;
   }
   .main-text__title {
+    margin-bottom: 20px;
+    margin-top: 20px;
     text-align: center;
   }
-  .portfolio {
-    padding: 30px;
+  .main-text__title span {
+    font-size: 17px;
+    margin-top: 10px;
   }
-  .section-title {
-    font-size: 15px;
-    line-height: 35px;
+  .feedback {
+    padding-top: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  .form {
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .form__input:first-child {
+    margin-right: 0;
+  }
+  .portfolio {
+    padding-top: 20px;
   }
   .dogovor {
     background-color: #ffffff;
     padding-top: 30px;
   }
   .section-title {
-    font-style: 25px;
-    padding-top: 100px;
+    padding-top: 20px;
     padding-bottom: 40px;
   }
   .section-subtitle {
     padding-bottom: 40px;
+  }
+  .dogovor-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .step {
     display: -webkit-box;
@@ -1564,29 +1762,49 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-width: 146px;
-    max-height: 166px;
+    max-width: 350px;
+    max-height: 200px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
   }
   .step_wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    max-width: 150px;
+    max-height: 200px;
+  }
+  .step_wrap-img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .step_wrap-img-title {
+    font-size: 10px;
+    line-height: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .dogovor-public-title {
+    font-size: 22px;
+    line-height: 30px;
   }
   .work-buy {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .work-buy-wrap__text {
+    font-size: 15px;
+  }
+  .guarantee__title {
+    padding-top: 60px;
+    line-height: 30px;
+    font-size: 22px;
+  }
   .guarantee-wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .guarantee-wrap__title {
-    padding-top: 60px;
-    font-style: 15px;
+  .guarantee-wrap-item__text {
+    font-size: 15px;
   }
   .phone {
     display: -webkit-box;
@@ -1603,14 +1821,6 @@ img {
     padding-top: 25px;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-  }
-  .phone__dialog-advantages__title {
-    font-size: 17px;
-    line-height: 15px;
-  }
-  .phone__dialog-advantages__subtitle {
-    font-size: 14px;
-    line-height: 25px;
   }
   .phone__dialog-advantages__descr {
     padding-top: 20px;
@@ -1636,69 +1846,112 @@ img {
   .footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 577px;
   }
-  .map {
+  .footer-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer .map {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  .contacts {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  .modal__dialog {
-    width: 570px;
-    margin: auto;
-  }
-  .modal__dialog-advantages {
-    background-color: #fff;
-    padding-top: 15px;
-  }
-  .modal__dialog-advantages__item {
-    display: inline-block;
-  }
-  .modal__dialog-advantages__img {
-    margin-right: auto;
-  }
-  .modal__dialog-advantages__descr {
-    font-size: 10px;
-    line-height: 10px;
-  }
-  .modal__dialog-manager__title {
-    font-size: 20px;
+  .footer .contacts {
     text-align: center;
-    padding-top: 10px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+  .footer .contacts__title {
+    line-height: 30px;
     padding-bottom: 15px;
   }
+  .modal__dialog {
+    display: block;
+    width: 577px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0;
+  }
+  .modal__dialog-advantages {
+    padding-top: 50px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .modal__dialog-advantages__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .modal__dialog-advantages__text {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 22px;
+    margin-bottom: auto;
+  }
+  .modal__dialog-advantages__img {
+    margin-right: 25px;
+  }
+  .modal__dialog-advantages__descr {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .modal__dialog-manager {
+    width: 100%;
+    display: block;
+  }
+  .modal__dialog-manager__title {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
   .modal__dialog-manager__subtitle {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
   }
   .modal__dialog-form {
     display: block;
+    text-align: center;
   }
   .modal__dialog-form__input {
     width: 250px;
-    height: 30px;
+    height: 50px;
   }
   .modal__dialog-form__button {
-    margin-bottom: 8px;
+    margin-bottom: 15px;
     width: 250px;
-    height: 30px;
+    height: 50px;
     font-size: 15px;
-  }
-  .modal__dialog-form__text {
-    width: 250px;
-    height: 35px;
-    font-weight: 400;
-    line-height: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
   }
   .modal__dialog-form__tel {
     font-size: 18px;
+    text-align: center;
   }
 }
 
 @media (max-width: 576px) {
+  .container {
+    width: 321px;
+  }
+  .section-title {
+    padding-top: 0;
+    line-height: 25px;
+    font-size: 20px;
+  }
+  .section-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
   .header-wrap {
     display: block;
     text-align: center;
@@ -1712,218 +1965,122 @@ img {
     margin: auto;
     padding-bottom: 20px;
   }
-  .main {
-    padding: 0;
-  }
-  .container {
-    width: 90%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .container-text {
-    margin: auto;
-  }
-  .container-text__title {
-    font-size: 20px;
-    line-height: 26px;
-  }
   .feedback {
-    padding: 5px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  .portfolio {
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .form__title {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 15px;
-    line-height: 20px;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  .form__subtitle {
-    font-size: 15px;
-    line-height: 20px;
-    text-align: center;
-  }
-  .form__input {
-    width: 235px;
-  }
-  .form__button {
-    width: 235px;
-    height: 67px;
-    font-size: 16px;
+    line-height: 25px;
+    font-size: 20px;
   }
   .form__output {
-    display: inline-block;
-    width: 235px;
-    height: 150px;
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
   }
   .form__output-item {
-    font-size: 15px;
-    padding-bottom: 15px;
-    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    padding-bottom: 20px;
   }
   .form__output-item-sign {
-    display: block;
-    font-size: 15px;
-    height: 50px;
-  }
-  .form__output-img-sign {
-    margin: auto;
-  }
-  .form__output-phone {
-    font-size: 15px;
-    line-height: 20px;
-    margin-bottom: 50px;
-  }
-  .portfolio {
-    padding: 20px;
-  }
-  .section-title {
-    font-size: 15px;
-    line-height: 20px;
-  }
-  .slider__item {
-    max-width: 75%;
-  }
-  .dogovor {
-    background-color: #ffffff;
-  }
-  .section-title {
-    font-style: 20px;
-    padding-top: 80px;
-    padding-bottom: 35px;
-  }
-  .section-subtitle {
-    padding-bottom: 30px;
-    font-style: 15px;
-  }
-  .dogovor-wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding-bottom: 50px;
-  }
-  .step {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .dogovor-public {
-    background-color: #ffc000;
+    width: 100%;
+    font-size: 16px;
   }
   .dogovor-public-title {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-size: 25px;
-    line-height: 30px;
+    line-height: 25px;
+    font-size: 20px;
   }
-  .work-buy {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .guarantee-wrap {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .phone {
+    margin: 0 auto;
   }
   .phone__dialog {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 320px;
+    width: 100%;
   }
   .phone__dialog-advantages {
-    padding-top: 30px;
+    padding: 0;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .phone__dialog-advantages__title {
-    font-style: 15px;
-    line-height: 15px;
+    width: 100%;
+    margin-bottom: 12px;
   }
   .phone__dialog-advantages__subtitle {
-    line-height: 45px;
-    width: 200px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .phone__dialog-advantages__descr {
-    padding-top: 40px;
-    padding-left: 60px;
+    padding-top: 12px;
+    padding-left: 30px;
+    font-size: 14px;
   }
   .phone__dialog-form {
-    padding-top: 30px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    padding: 0;
   }
-  .footer {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .phone__dialog-form__title {
+    width: 100%;
+    margin-bottom: 100px;
   }
-  .contacts__address {
-    position: absolute;
+  .phone__dialog-form__subtitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .footer .contacts {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+  .footer .contacts__title {
+    line-height: 25px;
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  .footer .contacts__address {
+    display: block;
   }
   .modal__dialog {
-    display: block;
-    width: 320px;
-    background-color: #fff;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 321px;
   }
   .modal__dialog-advantages {
-    background-color: #fff;
+    display: block;
+    padding-top: 25px;
   }
   .modal__dialog-advantages__item {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
-  .modal__dialog-advantages__text {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    font-size: 12px;
-    line-height: 10px;
-    margin-bottom: 10px;
+  .modal__dialog-advantages__img {
+    width: 170px;
+  }
+  .modal__dialog-advantages__descr {
+    padding-top: 18px;
+    font-size: 11px;
+    line-height: 18px;
+  }
+  .modal__dialog-form__text {
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+  }
+  .modal__dialog-form__tel {
+    font-size: 18px;
     text-align: center;
-  }
-  .modal__dialog-advantages__text hr {
-    display: none;
-  }
-  .modal__dialog-manager__title {
-    width: 180px;
-    height: 100px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .modal__dialog__subtitle {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    font-size: 11px;
-    line-height: 1px;
-  }
-  .modal__dialog-form {
-    display: flexbox;
-  }
-  .modal__dialog-form__input {
-    width: 200px;
-    height: 30px;
-    font-size: 11px;
-  }
-  .modal__dialog-form__button {
-    width: 200px;
-    height: 30px;
-    font-size: 12px;
-  }
-  .modal__dialog-form__text {
-    margin-bottom: 20px;
-  }
-  .modal__dialog-form__tel {
-    font-size: 15px;
-    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

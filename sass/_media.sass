@@ -1,93 +1,195 @@
 @media (max-width: 1199px)
+    .section
+        &-title
+            line-height: 38px
+            font-size: 27px
+        &-subtitle
+            font-size: 17px
     .container
-        width: 992px
+        width: 993px
+        margin: 9px
+    .main
+        &-text
+            &__title
+                font-size: 32px
+                line-height: 42px
+    .feedback
+        padding: 30px 0
+        &:before
+            width: 100%
     .portfolio
         padding-top: 50px
+        padding-bottom: 100px
     .slider
         &__item
             img
                 max-width: 95%
-    .price .section-title
-        padding-top: 50px
+    .price 
+        .section-title
+            padding-top: 50px
     .dogovor
         padding-top: 70px
+    .dogovor-public
+        height: auto
+        &-title
+            padding-top: 70px
+            padding-bottom: 70px
+            font-size: 28px
+            line-height: 40px   
     .work
         padding-top: 50px
-    .guarantee__title
-        padding-top: 70px
-        padding-bottom: 50px
-    .phone__dialog 
-        width: 992px
-        &-advantages
-            padding-top: 50px
-            padding-left: 20px
-        &-form
-            padding-top: 50px
-            padding-left: 70px
-            &__input
-                width: 300px
-            &__button
-                width: 300px
+    .guarantee
+        padding-bottom: 80px
+        &__title
+            line-height: 38px
+            font-size: 27px
+            padding-top: 70px
+            padding-bottom: 50px
+    .phone
+        &__dialog 
+            width: 992px
+            &-advantages
+                padding-top: 50px
+                padding-left: 20px
+            &-form
+                padding-top: 50px
+                padding-left: 70px
+                &__input
+                    width: 300px
+                &__button
+                    width: 300px
     .footer
-        width: 992px
+        flex-wrap: wrap
+        &-wrap
+            flex-wrap: wrap
+        .map
+            flex-basis: 100%
+        .contacts
+            padding-left: 0
+            text-align: center
+            flex-basis: 100%
+            &__address
+                display: flex
+                text-align: center
+                justify-content: center
+                &_wrap
+                    display: flex
+                    flex-wrap: nowrap
+                    justify-content: space-around
     .modal__dialog
         width: 992px
 @media (max-width: 992px)
+    .section
+        &-title
+            line-height: 33px
+            font-size: 25px
+        &-subtitle
+            font-size: 15px
     .container
         align-items: center
         width: 769px 
     .main
-        &-text
-            &__title
-                font-size: 30px
     .feedback
-        background: #fff
+        text-align: center
+        justify-content: center
         padding-top: 50px
     .portfolio
         padding-bottom: 100px
+    .dogovor
+    .dogovor-public
+        &-title
+            padding-top: 50px
+            padding-bottom: 50px
+            font-size: 25px
+            line-height: 33px 
     .work
         &-buy
             display: flex
             &-wrap
                 &__text
-                    font-size: 12px
+                    font-size: 13px
+                &__img
+                    padding-bottom: 0
     .guarantee
-        
         padding-bottom: 100px
         &__title
+            font-size: 25px
+            line-height: 33px
             padding-top: 30px
-
-    .phone__dialog
+        &-wrap
+            &-box
+            &-item
+                &__text
+                    font-size: 13px
+    .phone 
         display: flex
-        width: 769px
-        &-advantages
-            padding-left: 10px
-            &__title 
-                font-size: 20px
-                line-height: 30px
-                padding-left: 20px 
-                width: 370px
-            &__subtitle
-                margin-bottom: 40px
-            &__descr
-                width: 350px
-        &-form
+        background: none
+        background-size: contain
+        position: relative
+        z-index: 1
+        &:before
+            height: 50%
+            width: 100%
+        &__dialog
+            justify-content: center
+            display: flex
+            flex-wrap: wrap
+            width: 769px
+            margin: 0 auto
+            &-advantages
+                justify-content: center
+                align-items: center
+                padding: 0
+                &__title 
+                    text-align: center
+                    padding: 40px 0
+                    font-size: 22px
+                    margin-bottom: 40px
+                &__subtitle 
+                    text-align: center
+                    margin-bottom: 50px
+                &__descr
+                    width: 100%
+                    height: 100%
+            &-form
+                background: url(../img/phone_fone.png)  
+                flex-basis: 100%
+                padding-top: 0
+                padding-left: 60px
+                &__title
+                    padding-top: 20px
+                    font-size: 22px
+                    line-height: 30px
+                &__input
+                    width: 300px
+                &__button 
+                    width: 300px
+                    background-color: #ffd200
+    .footer
+        flex-wrap: wrap
+        width: 900px
+        &-wrap
+            flex-wrap: wrap
+        .map
+            flex-basis: 100%
+        .contacts
+            text-align: center
+            flex-basis: 100%
             padding-top: 50px
-            padding-left: 60px
-            &__title
-                font-size: 20px
-                line-height: 30px
-            &__input
-                width: 300px
-            &__button 
-                width: 300px
-    .footer 
-        flex-wrap: wrap 
+            padding-bottom: 40px
+        &__title
+            font-size: 22px
+            padding-bottom: 30px
+        &__address 
+            padding-left: 50%
+            &_wrap
+                padding-left: 50%
     .modal__dialog
         width: 769px
         &-advantages
             background-color: #fff
-            padding-top: 20px
+            margin-top: 40px
+            padding-left: 50px
             &__text
                 font-size: 12px
                 line-height: 22px
@@ -98,70 +200,116 @@
                 padding-bottom: 20px
                 ul 
                    padding-top: 10px 
-        &-manager__title
-            font-size: 18px
-            line-height: 18px
-            margin: auto
-            padding-top: 10px
-            padding-bottom: 25px
+        &-manager
+            &__title
+                font-size: 18px
+                line-height: 25px
+                margin: auto
+                padding-top: 10px
+                margin-bottom: 35px
             &__subtitle
-                margin-bottom: 5px
+                margin-bottom: 35px
         &-form
             display: block
             &__input
                 width: 300px
-                height: 30px
+                height: 50px
             &__button
-                margin-bottom: 8px
+                margin-bottom: 35px
                 width: 300px
-                height: 30px
+                height: 50px
                 font-size: 15px
             &__tel
                 font-size: 18px
 @media (max-width: 768px)
     .hidden-xs 
         display: none
+    .section
+        &-title
+            line-height: 30px
+            font-size: 22px
+        &-subtitle
+            font-size: 14px
+            line-height: 25px
     .container
-        width: 95%
+        width: 577px
     .main
+        padding: 20px 0
         &-wrap 
             flex-direction: column
         &-text 
             max-width: 400px
             margin: auto
             &__title
+                margin-bottom: 20px
+                margin-top: 20px
                 text-align: center
+                span
+                    font-size: 17px
+                    margin-top: 10px
+    .feedback
+        padding-top: 10px
+        align-items: center
+        margin-bottom: 20px
+        &:before
+    .form
+        margin: 0 auto
+        align-items: center
+        justify-content: center
+        &__input
+            &:first-child
+                margin-right: 0
     .portfolio
-        padding: 30px
-
-    .section-title
-        font-size: 15px
-        line-height: 35px
+        padding-top: 20px
     .dogovor
         background-color: #ffffff
         padding-top: 30px
     .section-title
-        font-style: 25px
-        padding-top: 100px
+        padding-top: 20px
         padding-bottom: 40px
     .section-subtitle
         padding-bottom: 40px
+    .dogovor-wrap
+        display: flex
+        flex-wrap: wrap
     .step
         display: flex
         flex-wrap: wrap
-        max-width: 146px
-        max-height: 166px
+        max-width: 350px
+        max-height: 200px
         justify-content: center
         text-align: center
         &_wrap
-            display: flex
+            max-width: 150px
+            max-height: 200px
+            &-img
+                margin-top: 20px
+                margin-bottom: 20px
+                &-title
+                    font-size: 10px
+                    line-height: 18px
+                    margin-bottom: 20px
+                    margin-top: 20px
+    .dogovor-public
+        &-title
+            font-size: 22px
+            line-height: 30px
     .work-buy
-        flex-wrap: wrap        
-    .guarantee-wrap
         flex-wrap: wrap
+        &-wrap
+            &__text
+                font-size: 15px        
+    .guarantee
         &__title
             padding-top: 60px
-            font-style: 15px      
+            line-height: 30px
+            font-size: 22px
+        &-wrap
+            flex-wrap: wrap  
+            &-box 
+            &-item
+                &__text
+                    font-size: 15px       
     .phone 
         display: flex
         &__dialog 
@@ -171,12 +319,6 @@
                 padding-left: 30px
                 padding-top: 25px
                 flex-basis: 100%
-                &__title 
-                    font-size: 17px
-                    line-height: 15px
-                &__subtitle 
-                    font-size: 14px
-                    line-height: 25px
                 &__descr
                     padding-top: 20px
                     padding-left: 30px
@@ -190,52 +332,83 @@
                     width: 300px
                 &__manager
                     margin-bottom: 20px
-    .footer 
-        flex-wrap: wrap 
-    .map
-        flex-basis: 100%
-    .contacts
-        flex-basis: 100%
-    .modal__dialog
-        width: 570px
-        margin: auto
-        &-advantages
-            background-color: #fff
-            padding-top: 15px
-            &__item
-                display: inline-block
-            &__img
-                margin-right: auto
-            &__descr
-                font-size: 10px
-                line-height: 10px
-        &-manager__title
-            font-size: 20px
+    .footer
+        flex-wrap: wrap
+        width: 577px
+        &-wrap
+            flex-wrap: wrap
+        .map
+            flex-basis: 100%
+        .contacts
             text-align: center
-            padding-top: 10px
-            padding-bottom: 15px
-        &-manager__subtitle
-            margin-bottom: 5px
+            flex-basis: 100%
+            padding-top: 25px
+            padding-bottom: 20px
+            &__title
+                line-height: 30px
+                padding-bottom: 15px
+    .modal__dialog
+        display: block
+        width: 577px
+        justify-content: center
+        margin-bottom: 0
+        &-advantages
+            padding-top: 50px
+            padding-bottom: 5px
+            background-color: #fff
+            width: 100%
+            justify-content: center
+            &__item
+                display: flex
+                margin-bottom: 15px
+            &__text
+                display: inline-block
+                font-size: 13px
+                line-height: 22px
+                margin-bottom: auto
+            &__img
+                margin-right: 25px
+            &__descr
+                padding-top: 30px
+                padding-bottom: 10px
+                font-size: 12px
+                line-height: 20px
+        &-manager
+            width: 100%
+            display: block
+            &__title
+                font-size: 18px
+                line-height: 28px
+                margin-bottom: 25px
+                text-align: center
+            &__subtitle
+                margin-bottom: 20px
+                font-size: 14px
         &-form
             display: block
+            text-align: center
             &__input
                 width: 250px
-                height: 30px
+                height: 50px
             &__button
-                margin-bottom: 8px
+                margin-bottom: 15px
                 width: 250px
-                height: 30px
+                height: 50px
                 font-size: 15px
-            &__text
-                width: 250px
-                height: 35px
-                font-weight: 400
-                line-height: 20px
-                margin-left: 10px
-                margin-right: 10px
             &__tel
                 font-size: 18px
+                text-align: center
 @media (max-width: 576px)
+    .container 
+        width: 321px
+    .section
+        &-title
+            padding-top: 0
+            line-height: 25px
+            font-size: 20px
+        &-subtitle
+            font-size: 14px
+            line-height: 20px    
     .header
         &-wrap
             display: block
@@ -248,148 +421,90 @@
                 margin: auto
                 padding-bottom: 20px
     .main
-        padding: 0
-    .container
-        width: 90%
-        flex-direction: column
-        &-text 
-            margin: auto
-            &__title
-                font-size: 20px
-                line-height: 26px
     .feedback
-        padding: 5px
+        margin-top: 50px
+        margin-bottom: 100px 
+    .portfolio
+        margin: 0 auto
+        align-items: center
+        justify-content: center
     .form
         &__title
-            padding-top: 15px
-            padding-bottom: 15px
-            font-size: 15px
-            line-height: 20px
-            text-align: center
-            margin-bottom: 15px
-        &__subtitle
-            font-size: 15px
-            line-height: 20px
-            text-align: center 
-        &__input
-            width: 235px
-        &__button
-            width: 235px
-            height: 67px
-            font-size: 16px
-        &__output 
-            display: inline-block
-            width: 235px
-            height: 150px
+            line-height: 25px
+            font-size: 20px
+        &__output
+            display: block
+            justify-content: center
             text-align: center
             &-item
-                font-size: 15px
-                padding-bottom: 15px
-                height: 50px
-            &-item-sign
-                display: block
-                font-size: 15px
-                height: 50px
-            &-img-sign
-                margin: auto
-            &-phone
-                font-size: 15px
-                line-height: 20px
-                margin-bottom: 50px
-    .portfolio
-        padding: 20px
-    .section-title
-        font-size: 15px
-        line-height: 20px
-    .slider__item
-        max-width: 75%
+                width: 100%
+                font-size: 16px
+                padding-bottom: 20px
+                &-sign
+                    width: 100%
+                    font-size: 16px
     .dogovor
-        background-color: #ffffff
-    .section-title
-        font-style: 20px
-        padding-top: 80px
-        padding-bottom: 35px
-    .section-subtitle
-        padding-bottom: 30px
-        font-style: 15px
-    .dogovor-wrap
-        display: flex
-        flex-wrap: wrap
-        padding-bottom: 50px
-    .step
-        display: flex
-        flex-wrap: wrap
     .dogovor-public
-        background-color: #ffc000 
         &-title
-            padding-top: 50px
-            padding-bottom: 50px
-            font-size: 25px
-            line-height: 30px
-    .work-buy
-        flex-wrap: wrap          
-    .guarantee-wrap
-        flex-wrap: wrap                   
-    .phone__dialog 
-        flex-wrap: wrap 
-        width: 320px
-        &-advantages
-            padding-top: 30px
+            line-height: 25px
+            font-size: 20px
+    .phone
+        margin: 0 auto
+        &__dialog 
+            width: 100%
+            &-advantages 
+                padding: 0
+                flex-basis: 100%
+                &__title
+                    width: 100%
+                    margin-bottom: 12px
+                &__subtitle
+                    margin-bottom: 12px
+                    font-size: 16px
+                    line-height: 20px
+                &__descr
+                    padding-top: 12px
+                    padding-left: 30px
+                    font-size: 14px
+            &-form 
+                padding: 0
+                &__title
+                    width: 100%
+                    margin-bottom: 100px
+                &__subtitle
+                    font-size: 14px
+                    line-height: 20px   
+    .footer
+        .contacts
+            width: 100%
+            padding-top: 25px
+            padding-bottom: 20px
             &__title
-                font-style: 15px
-                line-height: 15px
-            &__subtitle 
-                line-height: 45px
-                width: 200px
-            &__descr
-                padding-top: 40px
-                padding-left: 60px
-        &-form
-            padding-top: 30px
-            justify-content: center
-    .footer 
-        flex-wrap: wrap
-    .contacts
-        &__address
-           position: absolute    
+                line-height: 25px
+                font-size: 20px
+                padding-bottom: 15px
+            &__address
+                display: block
     .modal__dialog
-        display: block
-        width: 320px
-        background-color: #fff
-        justify-content: center
+        width: 321px
         &-advantages
-            background-color: #fff
+            display: block
+            padding-top: 25px
             &__item
                 display: block
-                margin-bottom: 5px
-            &__text
-                display: inline-flex
-                font-size: 12px
-                line-height: 10px
-                margin-bottom: 10px
-                text-align: center
-                hr
-                    display: none
-        &-manager__title
-            width: 180px
-            height: 100px
-            justify-content: center
-        &__subtitle
-            display: inline-flex
-            font-size: 11px
-            line-height: 1px
-        &-form
-            display: flexbox
-            &__input
-                width: 200px
-                height: 30px
+                margin-bottom: 15px
+            &__img
+                width: 170px
+            &__descr
+                padding-top: 18px
                 font-size: 11px
-            &__button
-                width: 200px
-                height: 30px
-                font-size: 12px
+                line-height: 18px
+        &-form
             &__text
-                margin-bottom: 20px
+                margin-left: 0
+                margin-right: 0
+                width: auto
             &__tel
-                font-size: 15px
-                margin-bottom: 20px
+                font-size: 18px
+                text-align: center
+                justify-content: center  
