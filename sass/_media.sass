@@ -1,4 +1,4 @@
-@media (max-width: 1199px)
+@media (max-width: 1200px)
     .section
         &-title
             line-height: 38px
@@ -6,17 +6,22 @@
         &-subtitle
             font-size: 17px
     .container
-        width: 993px
-        margin: 9px
+        padding-left: 15px
+        padding-right: 15px
+        margin: 0 auto
+        width: 992px
     .main
         &-text
             &__title
-                font-size: 32px
+                font-size: 32px 
                 line-height: 42px
     .feedback
-        padding: 30px 0
+        height: 700px
         &:before
-            width: 100%
+    .form
+        max-width: 505px
+        &__button
+            width: 95%
     .portfolio
         padding-top: 50px
         padding-bottom: 100px
@@ -51,23 +56,31 @@
             &-advantages
                 padding-top: 50px
                 padding-left: 20px
+                padding-right: 15px
             &-form
                 padding-top: 50px
-                padding-left: 70px
+                padding-left: 50px
+                padding-right: 20px
                 &__input
                     width: 300px
                 &__button
                     width: 300px
+                &__output-phone
+                    padding-bottom: 50px
     .footer
         flex-wrap: wrap
         &-wrap
-            flex-wrap: wrap
+            flex-wrap: wrap-reverse
         .map
             flex-basis: 100%
+            margin-left: 15px
+            margin-right: 15px
+            margin: 0 auto
         .contacts
-            padding-left: 0
             text-align: center
             flex-basis: 100%
+            padding: 50px 0 
+            margin: 0 auto
             &__address
                 display: flex
                 text-align: center
@@ -77,7 +90,7 @@
                     flex-wrap: nowrap
                     justify-content: space-around
     .modal__dialog
-        width: 992px
+        width: 985px
 @media (max-width: 992px)
     .section
         &-title
@@ -86,16 +99,28 @@
         &-subtitle
             font-size: 15px
     .container
-        align-items: center
-        width: 769px 
-    .main
+        padding-left: 15px
+        padding-right: 15px
+        margin: 0 auto
+        width: 768px 
     .feedback
+        height: 600px
         text-align: center
         justify-content: center
-        padding-top: 50px
+        &:before
+            width: 100%
+    .form
+        max-width: 100%
+        &__output
+            justify-content: space-around
     .portfolio
         padding-bottom: 100px
-    .dogovor
+    
+    .dogovor-wrap
+        display: flex
+        flex-wrap: wrap
+    .step
+        margin: 70px 10px
     .dogovor-public
         &-title
             padding-top: 50px
@@ -103,8 +128,10 @@
             font-size: 25px
             line-height: 33px 
     .work
+        text-align: center
         &-buy
             display: flex
+            flex-wrap: wrap
             &-wrap
                 &__text
                     font-size: 13px
@@ -117,7 +144,9 @@
             line-height: 33px
             padding-top: 30px
         &-wrap
-            &-box
+            display: flex
+            flex-wrap: wrap
+            text-align: center
             &-item
                 &__text
                     font-size: 13px
@@ -128,19 +157,20 @@
         position: relative
         z-index: 1
         &:before
-            height: 50%
+            height: 57%
             width: 100%
         &__dialog
             justify-content: center
             display: flex
             flex-wrap: wrap
-            width: 769px
+            width: 768px
             margin: 0 auto
             &-advantages
                 justify-content: center
                 align-items: center
                 padding: 0
                 &__title 
+                    width: 95%
                     text-align: center
                     padding: 40px 0
                     font-size: 22px
@@ -166,17 +196,19 @@
                     width: 300px
                     background-color: #ffd200
     .footer
-        flex-wrap: wrap
-        width: 900px
-        &-wrap
-            flex-wrap: wrap
         .map
             flex-basis: 100%
+            margin-left: 15px
+            margin-right: 15px
+            margin: 0 auto
         .contacts
             text-align: center
             flex-basis: 100%
+            margin-left: 15px
+            margin-right: 15px
             padding-top: 50px
             padding-bottom: 40px
+            margin: 0 auto
         &__title
             font-size: 22px
             padding-bottom: 30px
@@ -185,7 +217,7 @@
             &_wrap
                 padding-left: 50%
     .modal__dialog
-        width: 769px
+        width: 758px
         &-advantages
             background-color: #fff
             margin-top: 40px
@@ -232,7 +264,10 @@
             font-size: 14px
             line-height: 25px
     .container
-        width: 577px
+        width: 576px
+        padding-left: 15px
+        padding-right: 15px
+        margin: 0 auto
     .main
         padding: 20px 0
         &-wrap 
@@ -247,6 +282,9 @@
                 span
                     font-size: 17px
                     margin-top: 10px
+        &-image
+            width: 95%
+            margin: 0 auto
     .feedback
         padding-top: 10px
         align-items: center
@@ -259,6 +297,8 @@
         &__input
             &:first-child
                 margin-right: 0
+        &__button
+            width: 100%
     .portfolio
         padding-top: 20px
     .dogovor
@@ -273,12 +313,10 @@
         display: flex
         flex-wrap: wrap
     .step
-        display: flex
-        flex-wrap: wrap
         max-width: 350px
         max-height: 200px
-        justify-content: center
         text-align: center
+        margin: 20px
         &_wrap
             max-width: 150px
             max-height: 200px
@@ -295,23 +333,25 @@
             font-size: 22px
             line-height: 30px
     .work-buy
-        flex-wrap: wrap
         &-wrap
             &__text
                 font-size: 15px        
     .guarantee
+        padding-bottom: 50px
         &__title
             padding-top: 60px
             line-height: 30px
             font-size: 22px
         &-wrap
-            flex-wrap: wrap  
-            &-box 
             &-item
+                &__img
+                    width: 300px
                 &__text
                     font-size: 15px       
     .phone 
         display: flex
+        &:before
+            height: 54%
         &__dialog 
             flex-wrap: wrap
             width: 576px
@@ -333,23 +373,31 @@
                 &__manager
                     margin-bottom: 20px
     .footer
-        flex-wrap: wrap
-        width: 577px
-        &-wrap
-            flex-wrap: wrap
         .map
             flex-basis: 100%
+            padding-left: 15px
+            padding-right: 15px
+            margin: 0 auto
         .contacts
-            text-align: center
-            flex-basis: 100%
+            padding-left: 15px
+            padding-right: 15px
             padding-top: 25px
             padding-bottom: 20px
+            margin: 0 auto
+            text-align: center
             &__title
+                font-size: 20px
                 line-height: 30px
                 padding-bottom: 15px
+            &__address
+                &-text
+                    font-size: 14px
+                    line-height: 23px
+                    width: 160px
     .modal__dialog
         display: block
-        width: 577px
+        width: 95%
+        max-height: 100%
         justify-content: center
         margin-bottom: 0
         &-advantages
@@ -400,7 +448,10 @@
                 text-align: center
 @media (max-width: 576px)
     .container 
-        width: 321px
+        width: 320px
+        padding-left: 15px
+        padding-right: 15px
+        margin: 0 auto
     .section
         &-title
             padding-top: 0
@@ -420,10 +471,11 @@
                 text-align: center
                 margin: auto
                 padding-bottom: 20px
-    .main
     .feedback
         margin-top: 50px
-        margin-bottom: 100px 
+        margin-bottom: 100px
+    .form__button
+        width: 100% 
     .portfolio
         margin: 0 auto
         align-items: center
@@ -443,13 +495,14 @@
                 &-sign
                     width: 100%
                     font-size: 16px
-    .dogovor
     .dogovor-public
         &-title
             line-height: 25px
             font-size: 20px
     .phone
         margin: 0 auto
+        &:before
+            height: 51%
         &__dialog 
             width: 100%
             &-advantages 
@@ -460,7 +513,7 @@
                     margin-bottom: 12px
                 &__subtitle
                     margin-bottom: 12px
-                    font-size: 16px
+                    font-size: 14px
                     line-height: 20px
                 &__descr
                     padding-top: 12px
@@ -475,18 +528,28 @@
                     font-size: 14px
                     line-height: 20px   
     .footer
+        .map
+            flex-basis: 100%
+            padding-left: 15px
+            padding-right: 15px
+            margin: 0 auto
         .contacts
-            width: 100%
+            padding-left: 15px
+            padding-right: 15px
             padding-top: 25px
             padding-bottom: 20px
+            margin: 0 auto
             &__title
-                line-height: 25px
-                font-size: 20px
+                text-align: center
+                line-height: 23px
+                font-size: 18px
                 padding-bottom: 15px
             &__address
                 display: block
+                &_wrap
+                &-text
+                    text-align: center
     .modal__dialog
-        width: 321px
         &-advantages
             display: block
             padding-top: 25px
@@ -499,12 +562,21 @@
                 padding-top: 18px
                 font-size: 11px
                 line-height: 18px
+        &-manager
+            width: 95%
+            display: flex
+            &__title
+                font-size: 16px
+            &__subtitle
+                font-size: 13px
+                text-align: center
         &-form
             &__text
                 margin-left: 0
                 margin-right: 0
                 width: auto
+                font-size: 13px
             &__tel
-                font-size: 18px
+                font-size: 16px
                 text-align: center
                 justify-content: center  

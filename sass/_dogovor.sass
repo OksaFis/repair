@@ -1,10 +1,12 @@
 .dogovor
   background-color: #ffffff
-  padding-top: 168px
+  padding-top: 113px
+  padding-bottom: 18px
 .section-title
-  padding-bottom: 70px
+  padding-bottom: 24px
 .section-subtitle
-  padding-bottom: 69px
+  padding-bottom: 22px
+  font-size: 20px
 .dogovor-wrap
   display: flex
   justify-content: center
@@ -14,28 +16,33 @@
   display: block
   max-width: 146px
   max-height: 166px
+  padding-top: 29px
+  margin: 0 7px
   &_wrap
     display: block
+    padding-bottom: 20px
     &-img
       border: 2px solid $primary-color
       background-size: 34px
-      padding: 33px 
+      padding: 31px 
+      width: 105px
+      height: 105px
       border-radius: 50%
       background-repeat: no-repeat
       background-position: center
-      &-title
-        font-size: 14px
-        line-height: 20px
-        font-family: "Museo Sans Cyrl -300"
-        text-align: center
+    &-title
+      +bold
+      font-size: 13px
+      line-height: 20px
+      text-align: center
   &_between
     position: absolute
-    
+    padding: 0
 .dogovor-public
   height: 282px
   background-color: #ffc000 
   &-title
-    padding-top: 100px
+    padding-top: 88px
     padding-bottom: 100px
     font-size: 32px
-    line-height: 50px        
+    line-height: 50px      

@@ -396,7 +396,7 @@ template {
 .header-text_city {
   display: block;
   font-size: 13px;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 }
 
 .header-text_phone {
@@ -434,7 +434,10 @@ template {
 
 .main {
   background-color: #f5f5f5;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 27px;
 }
 
 .main-wrap {
@@ -465,6 +468,7 @@ template {
 .main-image {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  width: 736px;
 }
 
 .main-advantages {
@@ -485,16 +489,15 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .main-advantages__img {
-  min-width: 40px;
-  height: 40px;
+  min-width: 42px;
+  height: 42px;
   border-radius: 50%;
   border: 2px solid #ffd200;
   margin-right: 30px;
-  background-size: 16px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -511,8 +514,15 @@ template {
   background-image: url("../img/main/paint-board-and-brush.png");
 }
 
+.main-advantages__text {
+  width: 232px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
 .feedback {
-  padding: 94px 0;
+  padding: 68px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -527,7 +537,7 @@ template {
   content: '';
   left: 0;
   top: 0;
-  width: 55%;
+  width: 59%;
   height: 100%;
   background-color: #ffffff;
   position: absolute;
@@ -545,13 +555,14 @@ template {
 }
 
 .form__subtitle {
-  margin-bottom: 50px;
+  margin-bottom: 48px;
   display: block;
 }
 
 .form__input {
+  padding: 23px;
   width: 270px;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 .form__input:first-child {
@@ -559,7 +570,7 @@ template {
 }
 
 .form__button {
-  padding: 28px;
+  padding: 27px;
   display: block;
   width: 100%;
   font-size: 16px;
@@ -569,31 +580,28 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 31px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-top: 26px;
 }
 
 .form__output-item {
   font-size: 15px;
   width: 235px;
+  line-height: 24px;
+  margin-right: 67px;
 }
 
 .form__output-item-sign {
-  width: 235px;
   font-size: 15px;
-  height: 40px;
+  height: 43px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 3px;
 }
 
 .form__output-img {
-  width: 15px;
-  min-height: 40px;
   min-width: 40px;
-  margin-right: 22px;
+  margin-right: 21px;
   border-radius: 50%;
   border: 2px solid #cccccc;
   background-size: 16px;
@@ -606,7 +614,6 @@ template {
 }
 
 .form__output-phone {
-  padding-top: 10px;
   display: block;
   color: #333;
   font-family: 'Museo Sans Bold', sans-serif;
@@ -614,8 +621,8 @@ template {
 }
 
 .portfolio {
-  padding-top: 100px;
-  padding-bottom: 180px;
+  padding-top: 63px;
+  padding-bottom: 185px;
   background: url("../img/portfolio/bg-slider.png");
   z-index: 1;
   position: relative;
@@ -625,11 +632,15 @@ template {
   content: '';
   right: 0;
   top: 0;
-  width: 45%;
+  width: 41%;
   height: 100%;
   background-color: #f5f5f5;
   position: absolute;
   z-index: -1;
+}
+
+.portfolio .section-title {
+  padding-bottom: 63px;
 }
 
 .slider__item {
@@ -638,7 +649,10 @@ template {
 
 .slider__item img {
   margin: auto;
-  padding: 0 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 29px;
 }
 
 .arrow {
@@ -646,7 +660,7 @@ template {
   height: 19px;
   background-color: #000;
   position: absolute;
-  bottom: -68px;
+  bottom: -86px;
 }
 
 .arrow a:hover {
@@ -670,12 +684,12 @@ template {
 }
 
 .price .section-title {
-  padding-top: 100px;
-  padding-bottom: 58px;
+  padding-top: 67px;
+  padding-bottom: 24px;
 }
 
 .price .section-subtitle {
-  padding-bottom: 59px;
+  padding-bottom: 29px;
 }
 
 .price-wrap {
@@ -694,9 +708,9 @@ template {
   max-width: 370px;
   max-height: 410px;
   text-align: center;
-  padding-bottom: 47px;
+  padding-bottom: 50px;
   border: 1px solid #e8e8e8;
-  margin: 10px;
+  margin: 13px auto;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -712,7 +726,7 @@ template {
 
 .card_img-wrap {
   position: relative;
-  margin-bottom: 39px;
+  margin-bottom: 32px;
 }
 
 .card_img-wrap:after {
@@ -762,15 +776,17 @@ template {
 
 .dogovor {
   background-color: #ffffff;
-  padding-top: 168px;
+  padding-top: 113px;
+  padding-bottom: 18px;
 }
 
 .section-title {
-  padding-bottom: 70px;
+  padding-bottom: 24px;
 }
 
 .section-subtitle {
-  padding-bottom: 69px;
+  padding-bottom: 22px;
+  font-size: 20px;
 }
 
 .dogovor-wrap {
@@ -788,30 +804,36 @@ template {
   display: block;
   max-width: 146px;
   max-height: 166px;
+  padding-top: 29px;
+  margin: 0 7px;
 }
 
 .step_wrap {
   display: block;
+  padding-bottom: 20px;
 }
 
 .step_wrap-img {
   border: 2px solid #ffd200;
   background-size: 34px;
-  padding: 33px;
+  padding: 31px;
+  width: 105px;
+  height: 105px;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.step_wrap-img-title {
-  font-size: 14px;
+.step_wrap-title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 13px;
   line-height: 20px;
-  font-family: "Museo Sans Cyrl -300";
   text-align: center;
 }
 
 .step_between {
   position: absolute;
+  padding: 0;
 }
 
 .dogovor-public {
@@ -820,7 +842,7 @@ template {
 }
 
 .dogovor-public-title {
-  padding-top: 100px;
+  padding-top: 88px;
   padding-bottom: 100px;
   font-size: 32px;
   line-height: 50px;
@@ -849,7 +871,7 @@ template {
   line-height: 23px;
   color: #000000;
   padding-left: 24px;
-  padding-top: 30px;
+  padding-top: 22px;
   padding-bottom: 53px;
 }
 
@@ -858,14 +880,15 @@ template {
 }
 
 .guarantee {
-  padding-bottom: 228px;
+  padding-bottom: 205px;
   margin: 0 auto;
 }
 
 .guarantee__title {
-  padding-bottom: 99px;
-  padding-top: 143px;
+  padding-bottom: 73px;
+  padding-top: 115px;
   line-height: 45px;
+  font-size: 31px;
 }
 
 .guarantee-wrap {
@@ -895,7 +918,7 @@ template {
 }
 
 .guarantee-wrap-item__text {
-  padding-top: 41px;
+  padding-top: 8px;
   font-size: 18px;
   text-align: center;
   line-height: 24px;
@@ -929,7 +952,7 @@ template {
 }
 
 .phone__dialog-advantages {
-  padding: 96px 0 0 0;
+  padding: 82px 0 0 0;
   -ms-flex-preferred-size: 56%;
       flex-basis: 56%;
 }
@@ -938,7 +961,7 @@ template {
   width: 516px;
   font-size: 22px;
   line-height: 33px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   color: #000000;
   font-family: 'Museo Sans Bold', sans-serif;
 }
@@ -947,7 +970,7 @@ template {
   font-size: 16px;
   color: #000000;
   line-height: 45px;
-  margin-bottom: 80px;
+  margin-bottom: 71px;
 }
 
 .phone__dialog-advantages__descr {
@@ -963,7 +986,6 @@ template {
   font-size: 18px;
   font-family: 'Museo Sans Bold', sans-serif;
   color: #000000;
-  margin-bottom: 50px;
 }
 
 .phone__dialog-advantages__descr ul {
@@ -975,7 +997,7 @@ template {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   padding-left: 70px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1015,8 +1037,8 @@ template {
 
 .phone__dialog-form {
   text-align: center;
-  padding-top: 103px;
-  padding-left: 133px;
+  padding-top: 95px;
+  padding-left: 137px;
   display: block;
   -ms-flex-preferred-size: 44%;
       flex-basis: 44%;
@@ -1035,7 +1057,7 @@ template {
   color: #333333;
   font-size: 16px;
   line-height: 35px;
-  padding-bottom: 49px;
+  padding-bottom: 40px;
 }
 
 .phone__dialog-form__input {
@@ -1045,7 +1067,7 @@ template {
   border-radius: 10px;
   border: 1px solid #dddddd;
   background-color: #ffffff;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .phone__dialog-form__button {
@@ -1055,8 +1077,8 @@ template {
   color: #333333;
   border-radius: 10px;
   background-color: #ffd200;
-  margin-top: 30px;
-  margin-bottom: 33px;
+  margin-top: 20px;
+  margin-bottom: 26px;
 }
 
 .phone__dialog-form__manager {
@@ -1081,7 +1103,7 @@ template {
   left: 0;
   top: 0;
   width: 56%;
-  height: 100%;
+  height: 92%;
   position: absolute;
   z-index: -1;
 }
@@ -1102,17 +1124,16 @@ template {
 .contacts {
   -ms-flex-preferred-size: 44%;
       flex-basis: 44%;
-  padding-top: 100px;
-  padding-left: 134px;
-  padding-bottom: 80px;
+  padding-top: 73px;
+  padding-left: 141px;
 }
 
 .contacts__title {
-  font-size: 24px;
-  line-height: 45px;
+  font-size: 22px;
+  line-height: 33px;
   color: #000000;
   font-family: 'Museo Sans Bold', sans-serif;
-  padding-bottom: 100px;
+  padding-bottom: 72px;
 }
 
 .contacts__address {
@@ -1132,10 +1153,10 @@ template {
 }
 
 .contacts__address-text {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 26px;
   width: 178px;
-  padding-bottom: 46px;
+  padding-bottom: 29px;
 }
 
 .modal {
@@ -1367,7 +1388,7 @@ img {
   text-align: center;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
   .section-title {
     line-height: 38px;
     font-size: 27px;
@@ -1376,18 +1397,23 @@ img {
     font-size: 17px;
   }
   .container {
-    width: 993px;
-    margin: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    width: 992px;
   }
   .main-text__title {
     font-size: 32px;
     line-height: 42px;
   }
   .feedback {
-    padding: 30px 0;
+    height: 700px;
   }
-  .feedback:before {
-    width: 100%;
+  .form {
+    max-width: 505px;
+  }
+  .form__button {
+    width: 95%;
   }
   .portfolio {
     padding-top: 50px;
@@ -1429,10 +1455,12 @@ img {
   .phone__dialog-advantages {
     padding-top: 50px;
     padding-left: 20px;
+    padding-right: 15px;
   }
   .phone__dialog-form {
     padding-top: 50px;
-    padding-left: 70px;
+    padding-left: 50px;
+    padding-right: 20px;
   }
   .phone__dialog-form__input {
     width: 300px;
@@ -1440,23 +1468,30 @@ img {
   .phone__dialog-form__button {
     width: 300px;
   }
+  .phone__dialog-form__output-phone {
+    padding-bottom: 50px;
+  }
   .footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .footer-wrap {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
   }
   .footer .map {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin: 0 auto;
   }
   .footer .contacts {
-    padding-left: 0;
     text-align: center;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    padding: 50px 0;
+    margin: 0 auto;
   }
   .footer .contacts__address {
     display: -webkit-box;
@@ -1477,7 +1512,7 @@ img {
         justify-content: space-around;
   }
   .modal__dialog {
-    width: 992px;
+    width: 985px;
   }
 }
 
@@ -1490,20 +1525,40 @@ img {
     font-size: 15px;
   }
   .container {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 769px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    width: 768px;
   }
   .feedback {
+    height: 600px;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 50px;
+  }
+  .feedback:before {
+    width: 100%;
+  }
+  .form {
+    max-width: 100%;
+  }
+  .form__output {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .portfolio {
     padding-bottom: 100px;
+  }
+  .dogovor-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .step {
+    margin: 70px 10px;
   }
   .dogovor-public-title {
     padding-top: 50px;
@@ -1511,10 +1566,15 @@ img {
     font-size: 25px;
     line-height: 33px;
   }
+  .work {
+    text-align: center;
+  }
   .work-buy {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .work-buy-wrap__text {
     font-size: 13px;
@@ -1530,6 +1590,14 @@ img {
     line-height: 33px;
     padding-top: 30px;
   }
+  .guarantee-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
   .guarantee-wrap-item__text {
     font-size: 13px;
   }
@@ -1543,7 +1611,7 @@ img {
     z-index: 1;
   }
   .phone:before {
-    height: 50%;
+    height: 57%;
     width: 100%;
   }
   .phone__dialog {
@@ -1555,7 +1623,7 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 769px;
+    width: 768px;
     margin: 0 auto;
   }
   .phone__dialog-advantages {
@@ -1568,6 +1636,7 @@ img {
     padding: 0;
   }
   .phone__dialog-advantages__title {
+    width: 95%;
     text-align: center;
     padding: 40px 0;
     font-size: 22px;
@@ -1600,25 +1669,22 @@ img {
     width: 300px;
     background-color: #ffd200;
   }
-  .footer {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 900px;
-  }
-  .footer-wrap {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .footer .map {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin: 0 auto;
   }
   .footer .contacts {
     text-align: center;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
     padding-top: 50px;
     padding-bottom: 40px;
+    margin: 0 auto;
   }
   .footer__title {
     font-size: 22px;
@@ -1631,7 +1697,7 @@ img {
     padding-left: 50%;
   }
   .modal__dialog {
-    width: 769px;
+    width: 758px;
   }
   .modal__dialog-advantages {
     background-color: #fff;
@@ -1692,7 +1758,10 @@ img {
     line-height: 25px;
   }
   .container {
-    width: 577px;
+    width: 576px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
   }
   .main {
     padding: 20px 0;
@@ -1716,6 +1785,10 @@ img {
     font-size: 17px;
     margin-top: 10px;
   }
+  .main-image {
+    width: 95%;
+    margin: 0 auto;
+  }
   .feedback {
     padding-top: 10px;
     -webkit-box-align: center;
@@ -1734,6 +1807,9 @@ img {
   }
   .form__input:first-child {
     margin-right: 0;
+  }
+  .form__button {
+    width: 100%;
   }
   .portfolio {
     padding-top: 20px;
@@ -1757,17 +1833,10 @@ img {
         flex-wrap: wrap;
   }
   .step {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     max-width: 350px;
     max-height: 200px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     text-align: center;
+    margin: 20px;
   }
   .step_wrap {
     max-width: 150px;
@@ -1787,21 +1856,19 @@ img {
     font-size: 22px;
     line-height: 30px;
   }
-  .work-buy {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .work-buy-wrap__text {
     font-size: 15px;
+  }
+  .guarantee {
+    padding-bottom: 50px;
   }
   .guarantee__title {
     padding-top: 60px;
     line-height: 30px;
     font-size: 22px;
   }
-  .guarantee-wrap {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .guarantee-wrap-item__img {
+    width: 300px;
   }
   .guarantee-wrap-item__text {
     font-size: 15px;
@@ -1810,6 +1877,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .phone:before {
+    height: 54%;
   }
   .phone__dialog {
     -ms-flex-wrap: wrap;
@@ -1843,33 +1913,35 @@ img {
   .phone__dialog-form__manager {
     margin-bottom: 20px;
   }
-  .footer {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 577px;
-  }
-  .footer-wrap {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .footer .map {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
   }
   .footer .contacts {
-    text-align: center;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 25px;
     padding-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
   }
   .footer .contacts__title {
+    font-size: 20px;
     line-height: 30px;
     padding-bottom: 15px;
   }
+  .footer .contacts__address-text {
+    font-size: 14px;
+    line-height: 23px;
+    width: 160px;
+  }
   .modal__dialog {
     display: block;
-    width: 577px;
+    width: 95%;
+    max-height: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1941,7 +2013,10 @@ img {
 
 @media (max-width: 576px) {
   .container {
-    width: 321px;
+    width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
   }
   .section-title {
     padding-top: 0;
@@ -1968,6 +2043,9 @@ img {
   .feedback {
     margin-top: 50px;
     margin-bottom: 100px;
+  }
+  .form__button {
+    width: 100%;
   }
   .portfolio {
     margin: 0 auto;
@@ -2005,6 +2083,9 @@ img {
   .phone {
     margin: 0 auto;
   }
+  .phone:before {
+    height: 51%;
+  }
   .phone__dialog {
     width: 100%;
   }
@@ -2019,7 +2100,7 @@ img {
   }
   .phone__dialog-advantages__subtitle {
     margin-bottom: 12px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
   }
   .phone__dialog-advantages__descr {
@@ -2038,21 +2119,31 @@ img {
     font-size: 14px;
     line-height: 20px;
   }
+  .footer .map {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
   .footer .contacts {
-    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 25px;
     padding-bottom: 20px;
+    margin: 0 auto;
   }
   .footer .contacts__title {
-    line-height: 25px;
-    font-size: 20px;
+    text-align: center;
+    line-height: 23px;
+    font-size: 18px;
     padding-bottom: 15px;
   }
   .footer .contacts__address {
     display: block;
   }
-  .modal__dialog {
-    width: 321px;
+  .footer .contacts__address-text {
+    text-align: center;
   }
   .modal__dialog-advantages {
     display: block;
@@ -2070,13 +2161,27 @@ img {
     font-size: 11px;
     line-height: 18px;
   }
+  .modal__dialog-manager {
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .modal__dialog-manager__title {
+    font-size: 16px;
+  }
+  .modal__dialog-manager__subtitle {
+    font-size: 13px;
+    text-align: center;
+  }
   .modal__dialog-form__text {
     margin-left: 0;
     margin-right: 0;
     width: auto;
+    font-size: 13px;
   }
   .modal__dialog-form__tel {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;

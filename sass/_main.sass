@@ -1,6 +1,9 @@
 .main
     background-color: $light-bg-color
-    padding: 60px 0
+    padding-top: 60px 
+    padding-left: 0
+    padding-right: 0
+    padding-bottom: 27px
     &-wrap 
       display: flex
     &-text 
@@ -17,6 +20,7 @@
             margin-top: 20px
     &-image
        flex-basis: 50% 
+       width: 736px
     &-advantages
         display: flex
         flex-direction: column
@@ -24,14 +28,13 @@
         &__item
             display: flex
             align-items: center
-            margin-bottom: 30px
+            margin-bottom: 27px
         &__img
-            min-width: 40px
-            height: 40px
+            min-width: 42px
+            height: 42px
             border-radius: 50%
             border: 2px solid $primary-color 
             margin-right: 30px
-            background-size: 16px
             background-repeat: no-repeat
             background-position: center
             &-1
@@ -39,4 +42,9 @@
             &-2
                 background-image: url('../img/main/calculator.png') 
             &-3
-                background-image: url('../img/main/paint-board-and-brush.png')            
+                background-image: url('../img/main/paint-board-and-brush.png')  
+        &__text
+            width: 232px
+            font-size: 14px
+            line-height: 24px
+            color: #333333          
