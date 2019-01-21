@@ -526,7 +526,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url("../img/feedback/feedback-bg.png") no-repeat center left 100%;
+  background: url("../img/feedback/feedback-bg.png") no-repeat center left 160%;
   background-size: contain;
   position: relative;
   z-index: 1;
@@ -1941,41 +1941,15 @@ img {
   .modal__dialog {
     display: block;
     width: 95%;
-    max-height: 100%;
+    max-height: 85%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 0;
+    margin-bottom: 60px;
   }
   .modal__dialog-advantages {
-    padding-top: 50px;
-    padding-bottom: 5px;
-    background-color: #fff;
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .modal__dialog-advantages__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 15px;
-  }
-  .modal__dialog-advantages__text {
-    display: inline-block;
-    font-size: 13px;
-    line-height: 22px;
-    margin-bottom: auto;
-  }
-  .modal__dialog-advantages__img {
-    margin-right: 25px;
-  }
-  .modal__dialog-advantages__descr {
-    padding-top: 30px;
-    padding-bottom: 10px;
-    font-size: 12px;
-    line-height: 20px;
+    padding-top: 60px;
+    display: none;
   }
   .modal__dialog-manager {
     width: 100%;
@@ -1984,28 +1958,26 @@ img {
   .modal__dialog-manager__title {
     font-size: 18px;
     line-height: 28px;
-    margin-bottom: 25px;
-    text-align: center;
+    margin: 40px auto;
   }
   .modal__dialog-manager__subtitle {
     margin-bottom: 20px;
     font-size: 14px;
   }
-  .modal__dialog-form {
-    display: block;
-    text-align: center;
-  }
   .modal__dialog-form__input {
+    margin: 10px;
     width: 250px;
-    height: 50px;
+    height: 55px;
   }
   .modal__dialog-form__button {
-    margin-bottom: 15px;
+    margin: 15px;
     width: 250px;
-    height: 50px;
+    height: 55px;
     font-size: 15px;
   }
   .modal__dialog-form__tel {
+    margin-top: 20px;
+    margin-bottom: 30px;
     font-size: 18px;
     text-align: center;
   }
@@ -2145,47 +2117,48 @@ img {
   .footer .contacts__address-text {
     text-align: center;
   }
+  .modal__dialog {
+    margin-bottom: 20px;
+  }
   .modal__dialog-advantages {
-    display: block;
-    padding-top: 25px;
+    padding-top: 20px;
   }
-  .modal__dialog-advantages__item {
-    display: block;
-    margin-bottom: 15px;
+  .modal__dialog-advantages__title {
+    margin: 10px auto;
   }
-  .modal__dialog-advantages__img {
-    width: 170px;
+  .modal__dialog-advantages__subtitle {
+    margin-bottom: 10px;
   }
-  .modal__dialog-advantages__descr {
-    padding-top: 18px;
-    font-size: 11px;
-    line-height: 18px;
-  }
-  .modal__dialog-manager {
-    width: 95%;
+  .modal__dialog-form {
+    width: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .modal__dialog-manager__title {
-    font-size: 16px;
-  }
-  .modal__dialog-manager__subtitle {
-    font-size: 13px;
-    text-align: center;
-  }
-  .modal__dialog-form__text {
-    margin-left: 0;
-    margin-right: 0;
-    width: auto;
-    font-size: 13px;
-  }
-  .modal__dialog-form__tel {
-    font-size: 16px;
-    text-align: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .modal__dialog-form__input {
+    margin: 8px;
+    width: 230px;
+    height: 45px;
+    font-size: 13px;
+  }
+  .modal__dialog-form__button {
+    margin: 8px;
+    width: 230px;
+    height: 45px;
+    font-size: 13px;
+  }
+  .modal__dialog-form__text {
+    display: none;
+  }
+  .modal__dialog-form__tel {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
